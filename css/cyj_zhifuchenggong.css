@@ -1,0 +1,329 @@
+header{
+    width:100%;
+    height: 1rem;
+    background:#fff;
+    box-shadow: 0 0.05rem 0.1rem rgba(41,167,255,0.13);
+    padding:0 0.24rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+header p{
+     /*display: block;*/
+     font-size: 0.38rem;
+     color: #4ebbfe;
+     text-align: center;
+     /*line-height: 1rem;*/
+ }
+header a{
+    text-align: center;
+    display: block;
+     color: #36a8fe;
+ }
+h2{
+    margin:0;
+    font-size: 0.24rem;
+}
+main{
+    margin-top:1.2rem;
+}
+main .container{
+    width: 7rem;
+    /*height:1.62rem;*/
+    margin:0.19rem auto 0;
+    /*opacity: 0.5;*/
+    border-radius: 0.04rem;
+    background-color: #ffffff;
+    font-size: 0.14rem;
+    padding:0.2rem 0 0.2rem 0;
+    box-sizing: border-box;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*align-items: center;*/
+}
+
+.title{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.title .dian{
+    width: 0.08rem;
+    height: 0.05rem;
+    border-radius: 0.03rem;
+    background-color: rgb(52,218,135);
+}
+.xuyao{
+    font-size: 0.32rem;
+    color:rgb(79,91,100);
+    padding-left:0.14rem;
+}
+.xuyao span{
+    color:rgb(52,218,135);
+}
+ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+
+}
+ul li{
+    width: 50%;
+    height: 4.6rem;
+    /*background-color: red;*/
+    font-size: 0.24rem;
+    padding: 0.1rem;
+    position: relative;
+}
+.wu{
+    width: 0.54rem;
+    height: 0.3rem;
+    border-radius: 0.15rem;
+    background: -webkit-linear-gradient(left,rgb(55,224,111),rgb(49,214,154));
+    box-shadow: 0 0 0.1rem rgb(68,181,255);
+    text-align: center;
+    line-height: 0.3rem;
+    color:#fff;
+    position: absolute;
+    right:0;
+    top:0.1rem;
+}
+.tu{
+    width: 1.53rem;
+    height: 1.61rem;
+    margin:0.3rem auto 0;
+}
+.tu img{
+    width: 1.53rem;
+    height: 1.61rem;
+}
+.one{
+    display: flex;
+    justify-content: space-between;
+    margin-top:0.44rem;
+}
+.one h2{
+    font-size: 0.3rem;
+    opacity: 0.6;
+}
+.one span{
+    font-size: 0.28rem;
+    color:rgb(251,181,72);
+}
+.two{
+    margin-top: 0.1rem;
+}
+.two p{
+    font-size: 0.22rem;
+    opacity: 0.5;
+    padding-bottom: 0.2rem;
+    border-bottom: 0.01rem solid #f9f9;
+}
+.three{
+    display: flex;
+    justify-content: space-between;
+}
+.three .yishou{
+    display: flex;
+    align-items: center;
+}
+.three .yishou .dian{
+    width: 0.08rem;
+    height: 0.05rem;
+    border-radius: 0.03rem;
+    background-color: rgb(52,218,135);
+}
+.three .yishou h2{
+    font-size: 0.22rem;
+    opacity: 0.3;
+    padding-left:0.04rem;
+}
+.three .yishou span{
+    color:rgb(54,168,254);
+    opacity: 1;
+    font-weight: bolder;
+    padding-left:0.09rem;
+}
+.four{
+    display: flex;
+    justify-content: space-around;
+    margin-top:0.19rem;
+}
+.four .zhuanye{
+    width: 1.21rem;
+    height: 0.35rem;
+    font-size: 0.2rem;
+    text-align: center;
+    line-height: 0.35rem;
+    color:#fff;
+    background: #e7f6ff;
+    border-radius: 0.2rem;
+}
+.four .zhuanye h2{
+    font-size: 0.18rem;
+    font-weight: bolder;
+    color:rgb(54,168,254);
+}
+.xinxi{
+    display: flex;
+    align-items: center;
+}
+.adress{
+    color: #000000;
+    font-size: 0.26rem;
+    margin-right: 0.3rem;
+}
+.adress span{
+    color:rgb(255,108,113);
+    font-weight: bold;
+}
+.yuan{
+    width: 0.3rem;
+    height: 0.3rem;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 0.1rem solid #4ebbfe;
+    opacity: 0.8;
+}
+.act{
+opacity: 0.04;
+}
+
+main .center{
+    width: 7rem;
+    margin:0 auto;
+    /*height:1.62rem;*/
+    /*margin:0.1rem auto 0;*/
+    border-radius: 0.04rem;
+    background-color: #fff;
+    font-size: 0.28rem;
+    padding:0.5rem 0 0.5rem 0.22rem;
+    box-sizing: border-box;
+    text-align: center;
+
+    border-bottom:0.01rem solid #f8f8f8;
+}
+main .center .ben{
+    width:1.08rem;
+    height: 0.81rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+}
+main .center .ben img{
+    width: 1.08rem;
+    height: 0.81rem;
+}
+main .center .dian{
+    width: 0.08rem;
+    height: 0.05rem;
+    border-radius: 0.03rem;
+    background-color: rgb(52,218,135);
+    position: absolute;
+    left:2.2rem;
+    top:0.1rem;
+    bottom: 0;
+    margin:auto 0;
+}
+main .center .dian1{
+    width: 0.08rem;
+    height: 0.05rem;
+    border-radius: 0.03rem;
+    background-color: rgb(52,218,135);
+    position: absolute;
+    right:1.94rem;
+    top:0.1rem;
+    bottom: 0;
+    margin:auto 0;
+}
+main .center .moren{
+
+}
+.chenggong{
+    position: relative;
+    margin-top:0.4rem;
+}
+.song{
+    margin-top:0.2rem;
+}
+main .center .moren h2{
+    padding-left: 0.3rem;
+    color:#4f5b64;
+    font-size: 0.24rem;
+    line-height: 0.3rem;
+
+}
+main .center .moren h2 span{
+
+    font-size: 0.3rem;
+    color:rgb(55,224,111);
+}
+main .center .icon-xiayibu{
+    font-size: 0.11rem;
+    color:#36a8fe;
+}
+main .bottom{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.52rem;
+    padding: 0 0.8rem;
+}
+main .bottom .chakan{
+    width: 1.96rem;
+    height: 0.6rem;
+    border-radius: 0.32rem;
+    background: -webkit-linear-gradient(left,rgb(55,224,111),rgb(49,214,154));
+    text-align: center;
+    line-height: 0.6rem;
+    color: #fff;
+    font-size: 0.2rem;
+    box-shadow: 0 0 0.1rem rgba(55,223,116,0.75);
+}
+main .bottom .back{
+    width: 1.96rem;
+    height: 0.6rem;
+    border-radius: 0.32rem;
+    background: rgb(59,172,254);
+    text-align: center;
+    line-height: 0.6rem;
+    color: #fff;
+    font-size: 0.2rem;
+    box-shadow: 0 0 0.1rem rgba(59,172,254,0.43);
+}
+footer{
+    width: 100%;
+    height: 1rem;
+    background: #f8fcff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding:0.1rem 0; */
+}
+footer .index{
+    /* height: 1.2rem; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer img{
+    width: 0.42rem;
+    height: 0.45rem;
+    /* margin-bottom: 0.1rem; */
+}
+footer p{
+    margin-top: 0.1rem;
+    font-size: 0.2rem;
+    color:#59c3fe;
+}
