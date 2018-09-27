@@ -1,35 +1,40 @@
 /*
-* @Author: che
-* @Date:   2018-08-08 13:00:48
-* @Last Modified by:   che
-* @Last Modified time: 2018-08-08 13:01:16
+* @Author: Zichen Gao
+* @Date:   2018-08-08 08:52:03
+* @Last Modified by:   Zichen Gao
+* @Last Modified time: 2018-08-08 11:53:46
 */
-@media screen and (min-width: 360px){
+@media screen and (min-width:360px){
 	html{
-		font-size: 48px;
+		font-size: calc(360/750*100px);
 	}
 }
-@media screen and (min-width: 375px){
+@media screen and (min-width:375px){
 	html{
-		font-size: 50px;
+		font-size: calc(375/750*100px);
 	}
 }
-@media screen and (min-width: 412px){
+@media screen and (min-width:412px){
 	html{
-		font-size: 55px;
+		font-size: calc(412/750*100px);
 	}
 }
-@media screen and (min-width: 750px){
+@media screen and (min-width:414px){
 	html{
-		font-size: 100px;
+		font-size: calc(414/750*100px);
 	}
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width:750px){
 	html{
-		font-size: 102px;
+		font-size: calc(750/750*100px);
 	}
 }
-@media screen and (min-width: 1024px){
+@media screen and (min-width:768px){
+	html{
+		font-size: calc(768/750*100px);
+	}
+}
+@media screen and (min-width:1024px){
 	html{
 		font-size: calc(1024/750*100px);
 	}

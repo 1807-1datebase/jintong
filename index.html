@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_853771_apoq15jfk3k.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/rem.css">
+    <link rel="stylesheet" href="css/swiper-4.3.5.min.css">
+    <script src="js/swiper-4.3.5.min.js"></script>
+</head>
+<body>
+<!--顶部开始-->
+<header>
+   <i class="iconfont icon-fanhui"></i>
+   <p>晋通</p>
+   <i class="iconfont "></i>
+</header>
+<!--顶部结束-->
+
+
+
+<!--搜索框开始-->
+<div class="search">
+  <div class="city">
+    <span>太原</span>
+    <i class="iconfont icon-xiala"></i>
+  </div>
+  <input type="text" placeholder="搜索你需要的服务  商品">
+</div>
+<!--搜索框结束-->
+
+
+
+<!--轮播图开始-->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/index/banner1.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/index/banner1.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/index/banner1.png" alt=""></div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+</div>
+<!--轮播图结束-->
+
+
+
+<!--分类开始-->
+<section>
+    <ul>
+        <li>
+            <img src="img/index/1.png" alt="">
+            <p>水路综合</p>
+        </li>
+        <li>
+            <img src="img/index/1.png" alt="">
+            <p>水路综合</p>
+        </li>
+        <li>
+            <img src="img/index/1.png" alt="">
+            <p>水路综合</p>
+        </li>
+        <li>
+            <img src="img/index/1.png" alt="">
+            <p>水路综合</p>
+        </li>
+        <li>
+            <img src="img/index/1.png" alt="">
+            <p>水路综合</p>
+        </li>
+        <li>
+            <img src="img/index/1.png" alt="">
+            <p>水路综合</p>
+        </li>
+        <li>
+            <img src="img/index/1.png" alt="">
+            <p>水路综合</p>
+        </li>
+    </ul>
+</section>
+<!--分类结束-->
+
+
+
+<!--底部开始-->
+<footer>
+    <div class="index">
+        <img src="img/index/index-yes.png" alt="">
+        <p>首页</p>
+    </div>
+    <div class="shop">
+        <img src="img/index/shop-no.png" alt="">
+        <p>商城</p>
+    </div>
+    <div class="enter">
+        <img src="img/index/enter-no.png" alt="">
+        <p>入驻</p>
+    </div>
+    <div class="order">
+        <img src="img/index/order-no.png" alt="">
+        <p>订单</p>
+    </div>
+    <div class="my">
+        <img src="img/index/my-no.png" alt="">
+        <p>我的</p>
+    </div>
+</footer>
+<!--底部结束-->
+</body>
+</html>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'horizontal', // 垂直切换选项
+        loop: true, // 循环模式选项
+
+        // 如果需要分页器
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    })
+</script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        autoplay:true,//等同于以下设置
+        /*autoplay: {
+         delay: 3000,
+         stopOnLastSlide: false,
+         disableOnInteraction: true,
+         },*/
+    });
+</script>
