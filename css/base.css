@@ -1,14 +1,16 @@
 /*
 * @Author: che
 * @Date:   2018-08-09 10:35:34
-* @Last Modified by:   che
-* @Last Modified time: 2018-08-09 10:42:26
+* @Last Modified by:   我的文档
+* @Last Modified time: 2018-09-27 10:31:18
 */
 *{
 	margin: 0;
 	padding: 0;
 	list-style: none;
 	box-sizing: border-box;
+	font-family: "苹方";
+	font-weight: 900;
 }
 a{
 	text-decoration: none;
