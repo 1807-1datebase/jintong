@@ -53,11 +53,12 @@
     </main>
 <footer>
     <!--//跳转-->
-    <a href=""><div class="xinzeng">确认支付</div></a>
+    <a href="javascript:;"><div class="xinzeng">确认支付</div></a>
 </footer>
 <div class="kword">
-	<div class="container">
-	</div>
+	<div class="container"></div>
+    <div class="jia"></div>
+    <div class="jian"></div>
 </div>
 <div class="shuru">
         <div class="center">
@@ -78,12 +79,45 @@
             <div class="yuan"></div>
             <!-- <div class="yuan"></div> -->
         </div>
-    </div>	
+    </div>
+    <a href="javascript:;"><div class="xinzeng">确定</div></a>
 </div>
 </body>
 </html>
 <script>
+    $(".yuan").eq(1).addClass("act");
     $(".yuan").click(function () {
         $(this).toggleClass("act");
+    });
+
+    let xinzeng=$(".xinzeng");
+    let kword=$(".kword");
+    let shuru=$(".shuru");
+    let close=$(".close");
+    // console.log(xinzeng);
+    xinzeng.click(function () {
+        kword.css("display","block");
+        shuru.css("display","block");
+    });
+    close.click(function () {
+        kword.css("display","none");
+        shuru.css("display","none");
     })
+
+
+    let jia=$(".jia");
+    let liang=$(".shuru .yuanbox .yuan");
+    let jian=$(".jian");
+    // console.log(liang);
+    let i=liang.index();
+    jia.click(function () {
+        liang.eq(i).addClass("hot");
+        i++;
+
+    });
+    jian.click(function () {
+        i--;
+        liang.eq(i).removeClass("hot");
+    })
+
 </script>

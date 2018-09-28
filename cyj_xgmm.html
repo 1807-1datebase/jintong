@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>支付</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_853771_9z5voskl1eh.css">
+    <link rel="stylesheet" href="css/rem.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/swiper-4.3.5.min.css">
+    <link rel="stylesheet" href="css/cyj_xgmm.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<header>
+    <a href="" class="iconfont icon-fanhui"></a>
+    <p>密码设置</p>
+    <i class="iconfont "></i>
+</header>
+
+<div class="kword">
+    <div class="container"></div>
+    <div class="jia"></div>
+    <div class="jian"></div>
+</div>
+<div class="shuru">
+        <div class="center">
+        <!--<div class="close">-->
+            <!--<img src="img/cyj_cuowu.png" alt="">-->
+        <!--</div>-->
+        <div class="moren">
+            <h2 class="chenggong">请输入支付密码进行验证
+                <div class="dian"></div>
+                <div class="dian1"></div>
+            </h2>
+        </div>
+        <div class="yuanbox">
+            <div class="yuan"></div>
+            <div class="yuan"></div>
+            <div class="yuan"></div>
+            <div class="yuan"></div>
+            <div class="yuan"></div>
+            <!-- <div class="yuan"></div> -->
+        </div>
+    </div>
+    <a href=""><div class="xinzeng">完成</div></a>
+</div>
+</body>
+</html>
+<script>
+
+    let jia=$(".jia");
+    let liang=$(".shuru .yuanbox .yuan");
+    let jian=$(".jian");
+    // console.log(liang);
+    let i=liang.index();
+    jia.click(function () {
+        liang.eq(i).addClass("hot");
+        i++;
+
+    });
+    jian.click(function () {
+        i--;
+        liang.eq(i).removeClass("hot");
+    })
+
+</script>
