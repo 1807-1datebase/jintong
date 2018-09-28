@@ -5,16 +5,22 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>填写订单</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/rem.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <link rel="stylesheet" href="css/dingDan-1.css">
-    <link rel="stylesheet" href="https://at.alicdn.com/t/font_853771_nag17ky0wy9.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_853771_fb2ylb6vxch.css">
 
 </head>
 <body>
-
+<!--顶部开始-->
+<header>
+    <i class="iconfont icon-fanhui"></i>
+    <p>填写订单</p>
+    <i class="iconfont "></i>
+</header>
+<!--顶部结束-->
     <div class="title">
         <div class="left"><h3>选择收货地址</h3></div>
         <div class="right iconfont icon-xiayibu"></div>
@@ -35,25 +41,25 @@
         </div>
     </div>
     <div class="title2">
-        <div class="left"><h3>优惠券</h3></div>
+        <div class="left"><div class="dian"></div><h3>优惠券</h3></div>
         <div class="right"><h3 style="width:1.7rem; ">无可用优惠券 </h3>
             <div class="iconfont icon-xiayibu"></div>
         </div>
 
     </div>
     <div class="title3">
-        <div class="left"><h3>金币</h3></div>
+        <div class="left"><div class="dian"></div><h3>金币</h3></div>
         <div class="right"><h3>无可用金币</h3></div>
     </div>
     <div class="title4">
-        <div class="left"><h3>发票信息</h3></div>
+        <div class="left"><div class="dian"></div><h3>发票信息</h3></div>
         <div class="right"><h3>不开发票</h3>
             <div class="iconfont icon-xiayibu"></div>
         </div>
     </div>
     <div class="title5">
         <div class="top">
-            <div class="left"><h3>备注</h3></div>
+            <div class="left"><div class="dian"></div><h3>备注</h3></div>
             <div class="right iconfont icon-xiayibu"></div>
         </div>
         <div class="box">
@@ -61,21 +67,55 @@
         </div>
         <input type="text" placeholder="添加文字描述">
         <div class="finsh">
-            <div class="left"><h3>商品金额</h3></div>
+            <div class="left"><div class="dian"></div><h3>商品金额</h3></div>
             <div class="right"><h3>
                 ￥60.00
             </h3></div>
         </div>
     </div>
     <div class="title6">
-        <div class="left"><h3>运费</h3></div>
+        <div class="left"><div class="dian"></div><h3>运费</h3></div>
         <div class="right"><h3>￥6.00</h3></div>
     </div>
     <div class="title7 foot">
         <div class="left"><h3>合计:</h3></div>
         <div class="shuzi"><p>￥<span>66</span></p></div>
-        <div class="right"><h3>提交订单</h3></div>
+        <div class="right an"><h3>提交订单</h3></div>
     </div>
-
+<div class="tan">
+    <div class="tou"><h3>店铺优惠</h3>
+        <div class="iconfont icon-Group-"></div>
+    </div>
+    <div class="tou2">
+        <div class="left"><h3>满200元减20元</h3></div>
+        <div class="right iconfont icon-danxuanxuanzhong"></div>
+    </div>
+    <div class="tou3">
+        <div class="left"><h3>满100元减10元</h3></div>
+        <div class="right iconfont icon-danxuanxuanzhong"></div>
+    </div>
+    <div class="tou4">
+        <div class="left"><h3>不使用优惠</h3></div>
+        <div class="right iconfont icon-danxuanxuanzhong"></div>
+    </div>
+    <div class="tou5">
+        <span>关闭</span>
+    </div>
+</div>
+<div class="bg">
+</div>
 </body>
 </html>
+<script>
+    let submit=document.querySelector(".an");
+    let tankuang=document.querySelector(".tan");
+    let bg=document.querySelector(".bg");
+    // let close=document.querySelector(".Mwd_tankuang .right img")
+    console.log(submit,tankuang,bg);
+    submit.onclick=function(){
+        tankuang.style.display="block";
+        bg.style.display="block";
+
+    }
+
+</script>

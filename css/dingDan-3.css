@@ -1,1 +1,211 @@
-.box
+
+body{
+    background: #fbfeff;
+}
+header{
+    width:100%;
+    height: 1rem;
+    background:#fff;
+    box-shadow: 0 0.05rem 0.5rem 0.1rem rgba(41,167,255,0.13);
+    padding:0 0.24rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    left: 0;
+    padding:0 0.24rem;
+    z-index: 3;
+}
+header p{
+    display: block;
+    font-size: 0.38rem;
+    line-height: 0.9rem;
+    color: #4ebbfe;
+    line-height: 1rem;
+}
+header i{
+    font-size:0.38rem ;
+    color: #36a8fe;
+    line-height: 1rem;
+}
+.pic{
+    width: 100%;
+    height: 6.92rem;
+    margin-top: 1rem;
+    position: relative;
+}
+.pic img{
+    width: 3.17rem;
+    height: 3.33rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+nav{
+    width: 100%;
+    height: 3.46rem;
+    padding-left: 0.24rem;
+    padding-right: 0.24rem;
+}
+nav h1{
+    font-size: 0.3rem;
+    color: #646666;
+}
+nav h5{
+    font-size: 0.24rem;
+    color: #afb1b2;
+}
+nav ul li{
+    height: 0.76rem;
+    width: 100%;
+    border-bottom: 0.02rem solid #f0f5f7;
+}
+nav li .jiage{
+    color: #fbb548;
+    font-size: 0.3rem;
+    line-height: 0.76rem;
+    float: left;
+}
+nav li .ding{
+    width: 0.8rem;
+    height: 0.37rem;
+    border-radius: 0.2rem;
+    background: #e8f6ff;
+    font-size: 0.24rem;
+    color: #41b2fc;
+    text-align: center;
+    line-height: 0.37rem;
+    margin-left: 0.22rem;
+    margin-top: 0.2rem;
+    float: left;
+}
+nav li .shang{
+    width: 1.1rem;
+    height: 0.37rem;
+    border-radius: 0.2rem;
+    background: #e7faf2;
+    font-size: 0.24rem;
+    color: #36d681;
+    text-align: center;
+    line-height: 0.37rem;
+    margin-left: 0.22rem;
+    margin-top: 0.2rem;
+    float: left;
+}
+
+nav li .yue .dian{
+    width: 0.1rem;
+    height: 0.1rem;
+    border-radius: 0.05rem;
+    background: #36d681;
+    box-shadow: 0 0.02rem 0.5rem 0.01rem #36d681;
+    float: left;
+    margin-top: 0.35rem;
+    margin-right: 0.1rem;
+}
+nav li .yue {
+    font-size: 0.24rem;
+    color: #afb1b2;
+    line-height: 0.76rem;
+    float: right ;
+}
+nav li .yue span{
+    color: #36a8fe;
+    margin-left: 0.1rem;
+}
+nav li:nth-child(3) .yue{
+    float: left;
+    color: #41b2fc;
+    margin-right: 0.78rem;
+}
+nav ul li:nth-child(2){
+    font-size: 0.25rem;
+    color: #ff844e;
+    line-height: 0.76rem;
+}
+
+nav ul li:nth-child(2) .jianman{
+    width: 1.86rem;
+    height: 0.4rem;
+    border-radius: 0.2rem;
+    background: linear-gradient(to right,#ff943b,#ffc73b);
+    float: right;
+    color: #fff;
+    margin-right: 4rem;
+    margin-top: 0.18rem;
+    line-height: 0.4rem;
+    text-align: center;
+    box-shadow: 0 0 0.2rem 0.005rem #ffc73b;
+}
+
+footer{
+    width: 100%;
+    height: 1.08rem;
+    background: #f8fcff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding-left: 0.24rem;
+    padding-right: 0.24rem;
+    display: flex;
+    flex-direction: row;
+}
+footer .dianpu{
+    width: 0.67rem;
+    color: #84cbfe;
+    font-size: 0.4rem;
+    text-align: center;
+    margin-left: 0.1rem;
+}
+footer .dianpu i{
+    font-size: 0.5rem;
+}
+footer .shop{
+    width: 0.96rem;
+    color: #43ce76;
+    font-size: 0.4rem;
+    text-align: center;
+    margin-left: 0.4rem;
+}
+footer .shop i{
+    font-size: 0.5rem;
+}
+footer .dianpu p{
+    font-size: 0.24rem;
+    color:#59c3fe;
+}
+footer .shop p{
+    font-size: 0.24rem;
+    color:#43ce76;
+}
+footer .che{
+    width: 1.96rem;
+    height: 0.58rem;
+    font-size: 0.3rem;
+    color: #fff;
+    text-align: center;
+    line-height: 0.58rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 0  0.1rem 0.01rem #37e071;
+    background: linear-gradient(to right ,#37e071,#32d698);
+    margin-left: 0.7rem;
+    margin-top: 0.24rem;
+}
+footer .xia{
+    width: 1.96rem;
+    height: 0.58rem;
+    font-size: 0.3rem;
+    color: #fff;
+    text-align: center;
+    line-height: 0.58rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.01rem 0.1rem 0.01rem #3bacfe;
+    background: #3bacfe;
+    margin-left: 0.24rem;
+    margin-top: 0.24rem;
+
+}
