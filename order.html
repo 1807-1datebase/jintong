@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/rem.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_853771_7b4nva577q3.css">
+   
+    <script src="js/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="css/order.css">
+
+</head>
+<body>
+<header>
+    <a href="booking.html" class="iconfont icon-fanhui"></a>
+    <p>待服务</p>
+    <i class="iconfont"></i>
+</header>
+<div class="title">
+    <div class="left"><h3>选择服务项目</h3></div>
+</div>
+
+
+<div class="container-b">
+    <div class="shadow">
+        <div class="rowone">
+            <!--<div class="dot"></div>-->
+            <p class="way">水龙头维修</p>
+            <div class="doorl" ><div class="center"></div></div>
+        </div>
+        <div class="rowone">
+            <!--<div class="dot"></div>-->
+            <p class="way">水龙头更换</p>
+            <div class="doorl"><div class="center"></div></div>
+        </div>
+        <div class="rowone">
+            <!--<div class="dot"></div>-->
+            <p class="way">其他</p>
+            <div class="doorl"><div class="center"></div></div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="container-b" style="margin-top: 0.25rem">
+    <div class="shadow">
+        <div class="rowone">
+            <!--<div class="dot"></div>-->
+            <p class="way">水龙头</p>
+            <p class="door" style="margin-left: 1rem">×<span>1</span></p>
+            <p class="shuzi" style="margin-left: 0.8rem">￥<span>45.00</span></p>
+            <div class="iconfont icon-jianhao" ></div>
+            <span>0</span>
+            <div class="iconfont icon-jiahao"></div>
+        </div>
+        <div class="rowone">
+            <!--<div class="dot"></div>-->
+            <p class="way">水管</p>
+            <p class="door"></p>
+        </div>
+        <div class="rowone">
+            <!--<div class="dot"></div>-->
+            <p class="way">地漏</p>
+            <p class="door"></p>
+        </div>
+        <div class="rowone">
+            <!--<div class="dot"></div>-->
+            <p class="way">补差价</p>
+            <p class="door"></p>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="title5">
+    <div class="top">
+        <div class="left"><h3>上传服务凭证</h3></div>
+        <!--<div class="right iconfont icon-xiayibu"></div>-->
+    </div>
+    <div class="box">
+        <img src="img/camera.png"/>
+    </div>
+    <input type="text" placeholder="添加文字描述...">
+</div>
+
+<div class="title2">
+    <div class="dot"></div>
+    <div class="left"><h3>优惠券</h3></div>
+    <div class="right"><h3 style="margin-right: 0.21rem">无可用优惠券 </h3>
+        <div class="iconfont icon-xiayibu"></div>
+    </div>
+</div>
+<div class="title3">
+    <div class="dot"></div>
+    <div class="left"><h3>金币</h3></div>
+    <div class="right"><h3 style="margin-right: 0.21rem">使用金币抵扣4元</h3>
+        <div class="iconfont icon-xiayibu"></div>
+    </div>
+
+</div>
+<div class="title4">
+    <div class="dot"></div>
+    <div class="left"><h3>定金</h3></div>
+    <div class="right"><h3 style="margin-right: 0.21rem">-30元</h3>
+        <div class="iconfont icon-xiayibu"></div>
+    </div>
+</div>
+
+
+<div class="title7 foot">
+    <div class="dot"></div>
+    <div class="left"><h3>合 计:</h3></div>
+    <div class="shuzi"><p>￥<span>162</span></p></div>
+    <div class="right"><h3>立即付款</h3></div>
+</div>
+
+</body>
+</html>
+<script>
+    let add=$(" .icon-jiahao")
+    let less=$(".icon-jianhao")
+    let spans=$(".rowone>span");
+    let count=$(".door span");
+
+    console.log(count);
+    let nums=parseInt(spans[0].innerHTML);
+    console.log(nums);
+    let aa=$(".shuzi>span");
+    add.click(function () {
+        let suan=45*(nums+1)+".00";
+        aa.html(suan);
+        if(nums>=100)return;
+        nums++;
+        spans[0].innerHTML=nums;
+        count[0].innerHTML=nums;
+    })
+
+    less.click(function () {
+        let suan=45*(nums-1);
+        aa.html(suan);
+        if (nums<=1){
+            return;
+        }
+        nums--;
+        spans[0].innerHTML=nums;
+        count[0].innerHTML=nums;
+    })
+
+
+</script>
