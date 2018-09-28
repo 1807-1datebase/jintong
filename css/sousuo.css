@@ -1,0 +1,154 @@
+html,body{
+    background: #fbfeff;
+}
+.frame{
+    width:100%;
+    height: 1rem;
+    box-shadow: 0 0.05rem 0.5rem 0.1rem rgba(41,167,255,0.13);
+}
+header{
+    width:100%;
+    height: 1rem;
+    background:#fff;
+    padding:0 0.24rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    left: 0;
+    padding:0 0.24rem;
+}
+header p{
+    display: block;
+    font-size: 0.38rem;
+    line-height: 0.9rem;
+    color: #4ebbfe;
+    line-height: 1rem;
+}
+header i{
+    font-size:0.38rem ;
+    color: #36a8fe;
+    line-height: 1rem;
+}
+/*顶部结束*/
+
+
+
+/*搜索框开始*/
+.search{
+    margin-top: 1rem;
+    width: 100%;
+    height: 0.88rem;
+    padding:0.15rem 0.24rem;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.search input{
+    width: 100%;
+    height: 0.6rem;
+    background: #f2faff;
+    border:0.02rem solid #e8f6ff;
+    border-radius: 0.3rem;
+    outline: none;
+    padding:0 0.3rem;
+    position: relative;
+}
+.search input::-webkit-input-placeholder{
+    font-size: 0.24rem;
+    color: #c8d9e6;
+}
+/*搜索框结束*/
+
+
+.maintain{
+    padding:0.4rem 0.24rem;
+}
+.maintain .title{
+    display: flex;
+    align-items: center;
+}
+.maintain .title h1{
+    font-size: 0.32rem;
+}
+.maintain .content{
+    margin-top: 0.2rem;
+    padding:0 0.1rem;
+    display: flex;
+    align-items: flex-start;
+}
+.maintain .content .right{
+    width: 4.9rem;
+    margin-left: 0.2rem;
+    margin-top: -0.32rem;
+    display: flex;
+    flex-direction: column;
+}
+.maintain .content .right .top{
+    display: flex;
+    justify-content: space-between;
+}
+.maintain .content .right .zx  li{
+    width:1.2rem ;
+    height: 0.35rem;
+    border-radius:0.18rem ;
+    background: #e7f6ff;
+    color: #36a8fe;
+    font-size:0.2rem ;
+    text-align: center;
+    line-height: 0.35rem;
+}
+.maintain .content .right .bottom button{
+    width:1.25rem ;
+    height: 0.45rem;
+    background:#3bacfe ;
+    border-radius: 0.28rem;
+    box-shadow: 0 0.05rem 0.1rem 0.05rem rgba(68,181,255,0.3);
+    color: #fff;
+    font-size: 0.2rem;
+    border: none;
+    outline: none;
+}
+
+
+
+
+
+.product{
+    padding:0.4rem 0.24rem;
+}
+.product .title{
+    display: flex;
+    align-items: center;
+}
+.product .title h1{
+    font-size: 0.32rem;
+}
+.product .content{
+    margin-top: 0.2rem;
+    padding:0 0.1rem;
+    display: flex;
+    align-items: flex-start;
+}
+.product .content .right{
+    width: 4.9rem;
+    margin-left: 0.2rem;
+    margin-top: -0.32rem;
+    display: flex;
+    flex-direction: column;
+}
+.product .content .right .top{
+    display: flex;
+    justify-content: space-between;
+}
+.product .content .right .zx  li{
+    width:1.2rem ;
+    height: 0.35rem;
+    border-radius:0.18rem ;
+    background: #e7f6ff;
+    color: #36a8fe;
+    font-size:0.2rem ;
+    text-align: center;
+    line-height: 0.35rem;
+}
