@@ -1,8 +1,8 @@
 /*
 * @Author: Dell
 * @Date:   2018-09-27 09:24:08
-* @Last Modified by:   Dell
-* @Last Modified time: 2018-09-27 19:21:20
+* @Last Modified by:   我的文档
+* @Last Modified time: 2018-09-28 18:31:28
 */
 /*顶部开始*/
 header{
@@ -26,7 +26,7 @@ header p{
     color: #4ebbfe;
     line-height: 1rem;
 }
-header i{
+header a{
     font-size:0.38rem ;
     color: #36a8fe;
     line-height: 1rem;

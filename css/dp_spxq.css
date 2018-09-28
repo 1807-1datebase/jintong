@@ -2,7 +2,7 @@
 * @Author: 我的文档
 * @Date:   2018-09-27 08:55:56
 * @Last Modified by:   我的文档
-* @Last Modified time: 2018-09-27 18:37:43
+* @Last Modified time: 2018-09-28 16:36:40
 */
 body{
 	background: #fbfeff;
@@ -10,7 +10,7 @@ body{
 header{
     width:100%;
     height: 1rem;
-    background:#fff;
+    background:#fbfeff;
     box-shadow: 0 0.05rem 0.5rem 0.1rem rgba(41,167,255,0.13);
     padding:0 0.24rem;
     display: flex;
@@ -171,12 +171,28 @@ nav ul li:nth-child(2) .jianman{
 	margin-top: 0.54rem;
 	margin-right: 0.08rem;
 }
-.pj .ti h5{
+.pj .ti a h5 {
 	font-size: 0.24rem;
 	color: #44b5ff;
 	float: right ;
 }
-
+.pj .ti a {
+	color: #44b5ff;
+	margin-left: 0;
+	float: right;
+}
+.pj .ti a i{
+	font-size: 0.24rem;
+	color: #44b5ff;
+	margin-left: 0;
+	float: right;
+}
+.pj .ti i{
+	float: right;
+	font-size: 0.24rem;
+	color: #dcf1ff;
+	margin-left: -0.14rem;
+}
 .pj ul li{
 	width: 100%;
 	height: 2rem;
