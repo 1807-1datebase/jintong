@@ -1,29 +1,34 @@
-.header{
-	width: 100%;
+header{
+	width:100%;
 	height: 1rem;
-
+	background:#fff;
+	padding:0 0.24rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: fixed;
+	top:0;
+	left: 0;
+	padding:0 0.24rem;
+	z-index: 3;
+	box-shadow: 0 0.05rem 0.5rem 0.1rem rgba(41,167,255,0.13);
 }
-.header h1{
-	text-align: center;
-	line-height: 1rem;
+header p{
+	display: block;
 	font-size: 0.38rem;
+	margin-left: -0.3rem;
 	color: #4ebbfe;
-	position: relative;
+	line-height: 1rem;
 }
-.header .icon{
-	float: left;
+header a{
+	font-size:0.38rem ;
+	color: #36a8fe;
 	line-height: 1rem;
-	font-size: 0.38rem;
-	color: #4ebbfe;
-	position: absolute;
-	left: 0.12rem;
-	top: 0;
-	bottom: 0;
-	margin: auto 0;
 }
 .box{
 	width: 100%;
 	padding: 0.12rem;
+	margin-top: 1rem;
 }
 .tallk-one{
 	margin-top: 0.45rem;
