@@ -1,0 +1,232 @@
+/*
+* @Author: Dell
+* @Date:   2018-09-27 09:24:08
+* @Last Modified by:   我的文档
+* @Last Modified time: 2018-09-28 18:31:28
+*/
+/*顶部开始*/
+header{
+    width:100%;
+    height: 1rem;
+    background:#fff;
+    box-shadow: 0 0.05rem 0.5rem 0.1rem rgba(41,167,255,0.13);
+    padding:0 0.24rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    left: 0;
+    padding:0 0.24rem;
+}
+header p{
+    display: block;
+    font-size: 0.38rem;
+    line-height: 0.9rem;
+    color: #4ebbfe;
+    line-height: 1rem;
+}
+header a{
+    font-size:0.38rem ;
+    color: #36a8fe;
+    line-height: 1rem;
+}
+/*顶部结束*/
+nav{
+	width: 100%;
+	margin-top: 1.3rem;
+}
+
+.container{
+	width: 100%;
+	padding-left: 0.24rem;
+	padding-right: 0.24rem;
+}
+.P_lb1{
+	width: 100%;
+	height: 1.80rem;
+	margin-top: 0.3rem;
+	border-bottom: 0.01rem solid #f0f5f7;
+}
+.P_lb1_top{
+	width: 100%;
+	height:0.37rem;
+	display: flex;
+	align-items: center;
+}
+.P_lb1_top_dian{
+	width: 0.12rem;
+	height: 0.06rem;
+	background:#44b5ff;
+	border-radius: 0.03rem; 
+	box-shadow: 0 0.05rem 0.5rem 0.1rem rgba(205,235,255,0.13);
+
+}
+.P_lb1 h3{
+	font-size:0.32rem;
+	color: #4f5b64;
+	font-weight: bold;
+}
+.P_lb1 h4{
+	font-size:0.32rem;
+	color: #44b5ff;
+	font-weight: bold;
+}
+.P_lb1 p{
+	font-size:0.21rem;
+	color:#afb1b2;  
+	margin-top:0.24rem; 
+	margin-left: 0.13rem;
+}
+.P_lb2{
+	width: 100%;
+	height: 5.38rem;
+	padding-top: 0.28rem;
+	padding-bottom:0.48rem; 
+	border-bottom: 0.01rem solid #f0f5f7;
+}
+.P_lb2_top{
+	width: 100%;
+	height:0.37rem;
+	display: flex;
+	align-items: center;
+}
+.P_lb2_top_dian{
+	width: 0.12rem;
+	height: 0.06rem;
+	background:#34da87;
+	border-radius: 0.03rem; 
+	box-shadow: 0 0.05rem 0.5rem 0.1rem rgba(52,218,135,0.13);
+
+}
+.P_lb2 h3{
+	font-size:0.32rem;
+	color: #4f5b64;
+	font-weight: bold;
+}
+.P_lb2 h4{
+	font-size:0.32rem;
+	color: #34da87;
+	font-weight: bold;
+}
+.P_lb2_bottom{
+	width:6.9rem;
+	height:3.94rem; 
+	margin-top: 0.3rem;
+	margin-left: 0.13rem;
+	border-radius: 0.2rem;
+	background-image: url('../img/shangpujieshao/P_datu.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.P_lb3{
+	width: 100%;
+	height: 3.7rem;
+	padding-top: 0.28rem;
+	padding-bottom:0.48rem; 
+	border-bottom: 0.01rem solid #f0f5f7;
+	margin-bottom: 0.48rem;
+}
+.P_lb3_top{
+	width: 100%;
+	height:0.37rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.P_lb3_sjxx{
+	width: 50%;
+	height: 0.37rem;
+	display: flex;
+	align-items: center;
+}
+.P_lb3_top_dian{
+	width: 0.12rem;
+	height: 0.06rem;
+	background:#34da87;
+	border-radius: 0.03rem; 
+	box-shadow: 0 0.05rem 0.5rem 0.1rem rgba(52,218,135,0.13);
+
+}
+.P_lb3 h3{
+	font-size:0.32rem;
+	color: #4f5b64;
+	font-weight: bold;
+}
+.P_lb3 h4{
+	font-size:0.32rem;
+	color: #34da87;
+	font-weight: bold;
+}
+.P_lb3_top_right{
+	width: 1.23rem;
+	height: 0.45rem;
+	background: linear-gradient(to right,#37e071,#34da89,#32d698);
+	border-radius: 0.5rem;
+	font-size: 0.23rem;
+	color: #fff;
+	text-align: center;
+	line-height: 0.45rem;
+}
+.P_lb3_bottom{
+	width:6.9rem; 
+	margin-top: 0.3rem;
+	margin-left: 0.13rem;	
+}
+.P_lb3xx1{
+	width: 100%;
+	height: 0.4rem;
+	padding-left: 0.13rem;
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.39rem;
+}
+.P_lb3xx1 img{
+	width:0.39rem;
+	height: 0.42rem; 
+}
+.P_lb3xx1 p{
+	font-size:0.28rem;
+	color:#646666;
+	margin-left: 0.2rem;
+	font-weight: bold;  
+}
+.P_lb4{
+	width: 100%;
+	height: 5.38rem;
+	padding-bottom:0.48rem; 
+	border-bottom: 0.01rem solid #f0f5f7;
+}
+.P_lb4_top{
+	width: 100%;
+	height:0.37rem;
+	display: flex;
+	align-items: center;
+}
+.P_lb4_top_dian{
+	width: 0.12rem;
+	height: 0.06rem;
+	background:#34da87;
+	border-radius: 0.03rem; 
+	box-shadow: 0 0.05rem 0.5rem 0.1rem rgba(52,218,135,0.13);
+
+}
+.P_lb4 h3{
+	font-size:0.32rem;
+	color: #4f5b64;
+	font-weight: bold;
+}
+.P_lb4 h4{
+	font-size:0.32rem;
+	color: #34da87;
+	font-weight: bold;
+}
+.P_lb4_bottom{
+	width:6.9rem;
+	height:3.94rem; 
+	margin-top: 0.3rem;
+	margin-left: 0.13rem;
+	border-radius: 0.2rem;
+	background: #e5e9ec;
+}
