@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>商品服务详情</title>
+    <meta charset="UTF-8">
+    <title>商品服务详情</title>
 </head>
 <link rel="stylesheet" href="css/rem.css">
 <link rel="stylesheet" href="css/swiper-4.3.5.min.css">
@@ -13,59 +13,96 @@
 <script src="js/jquery-3.3.1.js"></script>
 <body>
 <header>
-	<a href=""><i class="iconfont icon-fanhui"></i></a>
-	<p>商品服务详情</p>
-	<i class="iconfont "></i>
+    <a href="dp_spxq_bao.html"><i class="iconfont icon-fanhui"></i></a>
+    <p>商品服务详情</p>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
 </header>
-	<div class="title">
-		<div class="lunbo">
-			<img src="img/m1.png" alt="">
-		</div>
-	</div>
-	<div class="Down-jacket">
-		<img src="img/m2.png" alt="">
-	</div>
-	<div class="bottom">
-		<div class="money">
-			<h2>
-				<span class="money-1">￥</span>
-				<span class="money-2">162</span>
-			</h2>
-		</div>
-		<h1>
-			<div class="dian"></div> 
-			<span>规格</span>
-		</h1>
-		<div class="guige">
-			<h3>羽 绒 服</h3>
-		</div>
-		<h1>
-			<div class="dian"></div> 
-			<span>数量</span>
-		</h1>
-		<div class="jiajian">
-			<div class="jian"><span class="jian">-</span></div>
-			<span>0</span><span class="liang">1</span>
-			<div class="jia"><span class="jia">+</span></div>
-		</div>
-		<div class="Gouwu">
-			<span>加入购物车</span>
-		</div>
-		<div class="Xiadan">
-			<a href="mwd_TianxieDD.html"><span>立即下单</span></a>
-		</div>
-	</div>
+<div class="title">
+    <div class="lunbo">
+        <img src="img/m1.png" alt="">
+    </div>
+</div>
+<div class="Down-jacket">
+    <img src="img/m2.png" alt="">
+</div>
+<div class="bottom">
+    <div class="money">
+        <h2>
+            <span class="money-1">￥</span>
+            <span class="money-2">162</span>
+        </h2>
+    </div>
+    <h1>
+        <div class="dian"></div>
+        <span>规格</span>
+    </h1>
+    <div class="guige">
+        <h3>羽 绒 服</h3>
+    </div>
+    <h1>
+        <div class="dian"></div>
+        <span>数量</span>
+    </h1>
+    <div class="jiajian">
+        <div class="jian"><span>-</span></div>
+        <p>0</p><span class="liang">1</span>
+        <div class="jia"><span>+</span></div>
+    </div>
+    <div class="Gouwu">
+        <span>加入购物车</span>
+    </div>
+    <div class="Xiadan">
+        <a href="mwd_TianxieDD.html"><span>立即下单</span></a>
+    </div>
+</div>
 </body>
 </html>
 <script>
-	let money=$(".money-2");
-	let jia=$(".jia");
-	let jian=$(".jian");
-	let liang=$(".liang");
-	console.log($(".liang").html()+1);
-	$(".jia").click(function () {
-        $(".liang").html()+=1;
-
+    let money = $(".money-2");
+    let jia = $(".jia");
+    let jian = $(".jian");
+    let liang = $(".liang");
+    let po = $(".jiajian p");
+    console.log(po);
+    // console.log($(".liang").html()+1);
+    let num = 1;
+    let use = 0;
+    let as=162;
+    $(".jia").click(function () {
+        if (num >= 9) {
+            num = 0;
+            use += 1;
+        } else {
+            num++;
+            as=as+162;
+        }
+        $(".jiajian p").html(use);
+        $(".liang").html(num);
+        $(".money-2").html(as);
     })
+    jian.click(function () {
+
+        if (num <= 0) {
+            num = 9;
+            use -= 1;
+        } else {
+            num--;
+            as=as-162;
+
+        }
+        if (use<0) {
+            use=0;
+            num=0;
+        }
+
+        $(".liang").html(num);
+        $(".jiajian p").html(use);
+        $(".money-2").html(as);
+    })
+
 
 </script>
