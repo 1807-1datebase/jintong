@@ -9,6 +9,8 @@ $(function () {
         if(content==""){
         console.log(content);
           fail.css("display","block");
+      }else if(content=="水管"){
+        window.open("zcy-sousuo.html");
       }
     })
 })

@@ -146,6 +146,7 @@ footer ul{
 footer ul li{
     display: flex;
     flex-direction: column;
+    /* padding: 0.1rem 0; */
 }
 footer img{
     width: 0.42rem;
