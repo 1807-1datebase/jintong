@@ -1,16 +1,12 @@
 $(function () {
-    let enter = $("footer ul .enter");
+    let enter = $("footer .enter");
     let close=$(".close");
     let set=$(".set");
-    let input=$(".search input")
     console.log(enter,close);
     enter.click(function () {
-        set.css("display","block");
+        set.css("transform","scale(1)");
     })
     close.click(function () {
-        set.css("display","none");
+        set.css("transform","scale(0)");
     })
-    input.click(function() {
-        location.href="zcy-search.html";
-    });
 })
