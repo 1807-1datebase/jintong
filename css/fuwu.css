@@ -1,30 +1,30 @@
 header {
     width: 100%;
     height: 1rem;
-    background: #fff;
-    /*box-shadow: 0 0.05rem 0.5rem 0.1rem rgba(41,167,255,0.13);*/
+    background: #fbfeff;
+    box-shadow: 0 0.05rem 0.1rem rgba(41, 167, 255, 0.13);
     padding: 0 0.24rem;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
-    padding: 0 0.24rem;
 }
 
 header p {
-    display: block;
+    /*display: block;*/
     font-size: 0.38rem;
-    line-height: 0.9rem;
     color: #4ebbfe;
-    line-height: 1rem;
+    text-align: center;
+    /*line-height: 1rem;*/
 }
 
 header a {
-    font-size: 0.38rem;
+    text-align: center;
+    display: block;
     color: #36a8fe;
-    line-height: 1rem;
 }
 
 /*顶部结束*/
@@ -71,27 +71,24 @@ header a {
 .detali {
     display: flex;
     margin-top: 0.44rem;
+    padding-left: 0.24rem;
+    padding-right: 0.24rem;
 }
 
 .detali .left {
     width: 1.74rem;
     height: 1.74rem;
     border-radius: 0.1rem;
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
     box-shadow: 0 0.01rem 0.01rem rgba(223, 223, 223, 0.43);
     position: relative;
 }
 
 .detali .left img {
     display: block;
-    width: 1.19rem;
-    height: 1.25rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
+    width: 100%;
+    height: 100%;
+
 }
 
 .detali .right {
@@ -230,7 +227,13 @@ header a {
 .container-dian .icon .one {
     width: 0.5rem;
     height: 0.5rem;
-    background-color: #2b542c;
+    /*background-color: #2b542c;*/
+}
+
+.container-dian .icon .one img {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .container-dian .icon .team {
@@ -252,12 +255,26 @@ header a {
     margin-left: 1.07rem;
 }
 
+.container-dian .icon .two .icon-wode {
+    text-align: center;
+    line-height: 0.5rem;
+    font-size: 0.22rem;
+    color: #3aaafb;
+}
+
 .container-dian .icon .three {
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 0.3rem;
     border: 0.02rem solid #46b7f8;
     margin-left: 0.35rem;
+}
+
+.container-dian .icon .three .icon-dianhua {
+    text-align: center;
+    line-height: 0.5rem;
+    font-size: 0.22rem;
+    color: #3aaafb;
 }
 
 .container-dian .tousu {
@@ -320,7 +337,7 @@ footer {
     width: 100%;
     height: 1.15rem;
     display: flex;
-    padding-right:0.24rem;
+    padding-right: 0.24rem;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -329,6 +346,7 @@ footer {
     z-index: 2;
     background-color: white;
 }
+
 footer .cannel {
     width: 1.96rem;
     height: 0.6rem;
@@ -352,12 +370,14 @@ footer .pay {
     text-align: center;
     line-height: 0.6rem;
 }
-.hao{
+
+.hao {
     font-size: 0.24rem;
     color: #8a8c8d;
     margin-left: 3.2rem;
 }
-.sj{
+
+.sj {
     font-size: 0.24rem;
     color: #8a8c8d;
     margin-left: 2.8rem;
