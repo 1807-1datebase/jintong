@@ -73,7 +73,7 @@
             <div class="xuan"></div>
         </li>
     </ul>
-    <div class="close">
+    <div class="close guanbi">
         <div class="close_1">
             <span>关闭</span>
         </div>
@@ -122,7 +122,6 @@
 </div>
 
 <div class="title7 foot">
-
     <a href="mwd_Tuikuanxiangqing.html"><div class="right an"><h3>提交</h3></div></a>
 </div>
 <div class="title8"></div>
@@ -134,9 +133,10 @@
 
     let box=$(".box");
     let close=$(".icon");
+    let guan=$(".guanbi");
 
 
-    console.log(maicuo,box,close);
+    // console.log(maicuo,box,close);
     $(".title2 .right").click(function () {
         $(".box").slideDown("fast");
     })
@@ -150,6 +150,8 @@
         $(".box li .xuan").eq(i).toggleClass("hot");
 
     })
-
+    $(".guanbi").click(function () {
+        $(".box").slideUp("fast");
+    })
 
 </script>

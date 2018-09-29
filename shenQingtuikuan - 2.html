@@ -47,7 +47,7 @@
 
 
     </ul>
-    <div class="close">
+    <div class="close guanbi1">
         <div class="close_1">
             <span>关闭</span>
         </div>
@@ -102,7 +102,7 @@
             <div class="xuan"></div>
         </li>
     </ul>
-    <div class="close">
+    <div class="close guanbi2">
         <div class="close_1">
             <span>关闭</span>
         </div>
@@ -165,7 +165,22 @@
     let close=$(".icon");
     let closes=$(".icons");
 
-    console.log(maicuo,tuihuo,box,close);
+
+
+    let guan1=$(".guanbi1");
+    let guanbi2=$(".guanbi2");
+    $(".guanbi1").click(function () {
+        $(".boxD").slideUp("fast");
+    })
+    $(".guanbi2").click(function () {
+        $(".box").slideUp("fast");
+    })
+    console.log(guan1);
+
+
+
+
+    // console.log(maicuo,tuihuo,box,close);
     $(".title4 .right").click(function () {
         $(".box").slideDown("fast");
     })
