@@ -1,0 +1,262 @@
+/*
+* @Author: xiaojiejieJ
+* @Date:   2018-09-28 11:30:54
+* @Last Modified by:   xiaojiejieJ
+* @Last Modified time: 2018-09-28 14:14:28
+*/
+body{
+	background-color: #fbfeff;
+}
+header{
+    width:100%;
+    height: 1rem;
+    background:#fff;
+    box-shadow: 0 0.05rem 0.5rem 0.1rem rgba(41,167,255,0.13);
+    padding:0 0.24rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    left: 0;
+    padding:0 0.24rem;
+}
+header p{
+    display: block;
+    font-size: 0.38rem;
+    line-height: 0.9rem;
+    color: #4ebbfe;
+    line-height: 1rem;
+}
+header a{
+    text-align: center;
+    display: block;
+    color: #36a8fe;
+    margin-top: 0.3rem;
+ }
+header i{
+    font-size:0.38rem ;
+    color: #36a8fe;
+    line-height: 1rem;
+}
+
+.Nshang{
+	width: 3rem;
+	height: 0.4rem;
+	font-size: 0.32rem;
+	left: 0.34rem;
+	top: 2rem;
+	position: absolute;
+}
+.Nshang .Nxian{
+	width: 0.1rem;
+	height: 0.05rem;
+	border-radius: 0.02rem;
+	background-color: #44b5ff;
+	position: relative;
+	top: 0.18rem;
+}
+.Nshang h3{
+	color: #4f5b64;
+	margin-top: -0.1rem;
+	margin-left: 0.16rem;
+}
+.Nshang h3 span{
+	color: #44b5ff;
+}
+
+
+
+
+
+
+
+.Nwenzi{
+	width: 3rem;
+	height: 0.4rem;
+	font-size: 0.32rem;
+	left: 0.34rem;
+	top: 5.6rem;
+	position: absolute;
+}
+.Nwenzi .Nxian{
+	width: 0.1rem;
+	height: 0.05rem;
+	border-radius: 0.02rem;
+	background-color: #44b5ff;
+	position: relative;
+	top: 0.18rem;
+}
+.Nwenzi h3{
+	color: #4f5b64;
+	margin-top: -0.1rem;
+	margin-left: 0.16rem;
+}
+.Nwenzi h3 span{
+	color: #44b5ff;
+}
+.Ntequan{
+	width: 6.74rem;
+	height: 2.72rem;
+	top: 6.4rem;
+	left: 0.34rem;
+	position: absolute;
+	color: #a9aeb1;
+	/* letter-spacing: 0.01rem; */
+}
+.Ntequan .Nfuwu{
+    display: flex;
+}
+.Ntequan .Nfuwu img{
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-left: -0.4rem;
+}
+.Ntequan .Nfuwu .Nzi{
+	margin-left: -0.12rem;
+	margin-top: 0.36rem;
+}
+.Ntequan .Nfuwu .Nzi h3{
+	font-size: 0.28rem;
+	color: #000;
+}
+.Ntequan .Nfuwu .Nzi h4{
+	font-size: 0.24rem;
+	color: #979899;
+	margin-top: 0.2rem;
+}
+
+
+.Ntequan .Nzhekou{
+    display: flex;
+    margin-top: 0.18rem;
+}
+.Ntequan .Nzhekou img{
+    width: 1.9rem;
+    height: 1.9rem;
+    margin-left: -0.4rem;
+}
+.Ntequan .Nzhekou .Nzi{
+	margin-left: -0.12rem;
+	margin-top: 0.36rem;
+}
+.Ntequan .Nzhekou .Nzi h3{
+	font-size: 0.28rem;
+	color: #000;
+}
+.Ntequan .Nzhekou .Nzi h4{
+	font-size: 0.24rem;
+	color: #979899;
+	margin-top: 0.2rem;
+}
+
+
+.Ntequan .Nkuaisu{
+    display: flex;
+}
+.Ntequan .Nkuaisu img{
+    width: 1.9rem;
+    height: 1.9rem;
+    margin-left: -0.4rem;
+    margin-top: 0.24rem;
+}
+.Ntequan .Nkuaisu .Nzi{
+	margin-left: -0.12rem;
+	margin-top: 0.36rem;
+}
+.Ntequan .Nkuaisu .Nzi h3{
+	font-size: 0.28rem;
+	color: #000;
+}
+.Ntequan .Nkuaisu .Nzi h4{
+	font-size: 0.24rem;
+	color: #979899;
+	margin-top: 0.2rem;
+}
+
+
+
+.Nbian{
+	width: 6.74rem;
+	height: 0.02rem;
+	background: #eef1f2;
+	margin-left: 0.34rem;
+	margin-top: 2.6rem;
+}
+.Nbian1{
+	width: 6.74rem;
+	height: 0.02rem;
+	background: #eef1f2;
+	margin-left: 0.34rem;
+	margin-top: 1.8rem;
+}
+
+
+.Nwz1{
+	width: 100%;
+	height: 0.3rem;
+	display: flex;
+	margin-top: 0.24rem;
+}
+.Nwz1 .Nyuan{
+	width: 0.08rem;
+	height: 0.08rem;
+	border-radius: 50%;
+	margin-top: 0.18rem;
+	margin-left: 0.2rem;
+	background: #30c49c;
+	box-shadow: 0.01rem 0.01rem 0.1rem 0.05rem rgba(186,235,224,0.9);
+}
+.Nwz1 .Nzz{
+	height: 100%;
+	font-size: 0.24rem;
+	color: #979899;
+    margin-left: 0.02rem;
+	/* letter-spacing: 0.01rem; */
+}
+
+.Nwz2{
+	width: 100%;
+	height: 0.3rem;
+	display: flex;
+	margin-top: 0.34rem;
+}
+.Nwz2 .Nyuan{
+	width: 0.08rem;
+	height: 0.08rem;
+	border-radius: 50%;
+	margin-top: 0.18rem;
+	margin-left: 0.2rem;
+	background: #30c49c;
+	box-shadow: 0.01rem 0.01rem 0.1rem 0.05rem rgba(186,235,224,0.9);
+}
+.Nwz2 .Nzz{
+	height: 100%;
+	font-size: 0.24rem;
+	color: #979899;
+	margin-left: 0.02rem;
+	/* letter-spacing: 0.01rem; */
+}
+
+.Nwz3{
+	width: 100%;
+	height: 0.3rem;
+	display: flex;
+	margin-top: 0.34rem;
+}
+.Nwz3 .Nyuan{
+	width: 0.08rem;
+	height: 0.08rem;
+	border-radius: 50%;
+	margin-top: 0.18rem;
+	margin-left: 0.2rem;
+	background: #30c49c;
+	box-shadow: 0.01rem 0.01rem 0.1rem 0.05rem rgba(186,235,224,0.9);
+}
+.Nwz3 .Nzz{
+	height: 100%;
+	font-size: 0.24rem;
+	color: #979899;
+	margin-left: 0.02rem;
+	/* letter-spacing: 0.01rem; */
+}

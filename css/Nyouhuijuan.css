@@ -1,0 +1,208 @@
+
+header{
+    width:100%;
+    height: 1rem;
+    background:#fff;
+    box-shadow: 0 0.05rem 0.5rem 0.1rem rgba(41,167,255,0.13);
+    padding:0 0.24rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    left: 0;
+    padding:0 0.24rem;
+}
+header p{
+    display: block;
+    font-size: 0.38rem;
+    line-height: 0.9rem;
+    color: #4ebbfe;
+    line-height: 1rem;
+}
+header a{
+    text-align: center;
+    display: block;
+    color: #36a8fe;
+    margin-top: 0.3rem;
+ }
+header i{
+    font-size:0.38rem ;
+    color: #36a8fe;
+    line-height: 1rem;
+}
+
+.Na{
+    margin-top: 1.44rem;
+}
+.Nb{
+    width: 4.49rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.Nb li{
+    width: 1.33rem;
+    height: 0.52rem;
+    border-radius: 0.5rem;
+    background-color: #e7f6ff;
+    color: #3bacfe;
+    font-size: 0.2rem;
+    text-align: center;
+    line-height: 0.52rem;
+}
+.Nb .active{
+    background-color: #3bacfe;
+    color: white;
+    box-shadow: 0 0.05rem 0.12rem 0 rgba(59,172,254,0.43);
+}
+.Nc{
+    margin-top: 0.35rem;
+}
+.Nd{
+    width: 6.86rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.Nd li{
+    width: 100%;
+    margin-bottom: 0.34rem;
+}
+.Nna{
+    width: 100%;
+    height: 1.83rem;
+    border-radius: 0.14rem;
+    padding-top: 0.41rem;
+    padding-left: 0.2rem;
+    background: linear-gradient(to right,#27d29c,#33e172);
+    position: relative;
+}
+.Nnimg{
+    width: 1.41rem;
+    height: 0.58rem;
+    background-image: url("../img/Nyouhui.png");
+    background-size: 100% 100%;
+}
+.Nnh2{
+    position: absolute;
+    left:1.7rem;
+    top: 0.44rem;
+    font-size: 0.26rem;
+    color: white;
+}
+.Nnsp{
+    position: absolute;
+    color: rgba(251,254,255,0.6);
+    font-size: 0.2rem;
+    left:1.7rem;
+    top: 0.75rem;
+}
+.Nnsa{
+    position: absolute;
+    font-size: 0.94rem;
+    color: white;
+    top: 0.29rem;
+    right: 0.5rem;
+    font-weight: 700;
+    line-height: 0.94rem;
+}
+.Nnsn{
+    position: absolute;
+    font-size: 0.22rem;
+    color: white;
+    top: 0.89rem;
+    right: 0.23rem;
+    line-height: 0.22rem;
+}
+.Nnp{
+    position: absolute;
+    font-size: 0.24rem;
+    color: rgba(251,254,255,0.3);
+    line-height: 0.24rem;
+}
+.Nnp1{
+    position: absolute;
+    color: white;
+    font-size: 0.20rem;
+    line-height: 0.20rem;
+    bottom: 0.20rem;
+    left: 0.22rem;
+}
+.Nnsp1{
+    position: absolute;
+    color: rgba(251,254,255,0.6);
+    font-size: 0.20rem;
+    line-height: 0.20rem;
+    bottom: 0.20rem;
+    left: 0.34rem;
+}
+.Nnsp2{
+    position: absolute;
+    color: rgba(251,254,255,0.6);
+    font-size: 0.20rem;
+    line-height: 0.20rem;
+    bottom: 0.2rem;
+    left: 1.25rem;
+}
+.Nnaa{
+    display: inline-block;
+    position: absolute;
+    width: 1.36rem;
+    height: 0.38rem;
+    background-color: white;
+    font-size: 0.2rem;
+    color: #32e074;
+    border-radius: 0.5rem;
+    text-align: center;
+    line-height: 0.38rem;
+    bottom: 0.11rem;
+    right: 0.22rem;
+    font-weight: 700;
+    cursor:pointer;
+}
+.Nmast{
+    margin-top: 0.35rem;
+}
+.Nnb{
+    width: 100%;
+    height: 1.83rem;
+    border-radius: 0.14rem;
+    padding-top: 0.41rem;
+    padding-left: 0.2rem;
+    background: #d7e0e3;
+    position: relative;
+}
+.Ne .Nnaa{
+    display: inline-block;
+    position: absolute;
+    width: 1.36rem;
+    height: 0.38rem;
+    background-color: #fefffe;
+    font-size: 0.2rem;
+    color: #c7d7de;
+    border-radius: 0.5rem;
+    text-align: center;
+    line-height: 0.38rem;
+    bottom: 0.11rem;
+    right: 0.22rem;
+    font-weight: 700;
+    cursor:pointer;
+}
+.Nf .Nnaa{
+    display: inline-block;
+    position: absolute;
+    width: 1.36rem;
+    height: 0.38rem;
+    background-color: #fefffe;
+    font-size: 0.2rem;
+    color: #c7d7de;
+    border-radius: 0.5rem;
+    text-align: center;
+    line-height: 0.38rem;
+    bottom: 0.11rem;
+    right: 0.22rem;
+    font-weight: 700;
+    cursor:pointer;
+}

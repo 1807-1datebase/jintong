@@ -1,0 +1,84 @@
+header{
+    width:100%;
+    height: 1rem;
+    background:#fff;
+    box-shadow: 0 0.05rem 0.5rem 0.1rem rgba(41,167,255,0.13);
+    padding:0 0.24rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    left: 0;
+    /* padding:0 0.24rem; */
+}
+header p{
+    display: block;
+    font-size: 0.38rem;
+    line-height: 0.9rem;
+    color: #4ebbfe;
+    line-height: 1rem;
+}
+header a{
+    text-align: center;
+    display: block;
+    color: #36a8fe;
+    margin-top: 0.35rem;
+ }
+header i{
+    font-size:0.38rem ;
+    color: #36a8fe;
+    line-height: 1rem;
+}
+
+.Nshang{
+	width: 100%;
+	height: 0.4rem;
+	font-size: 0.26rem;
+	text-align: center;
+	top: 2rem;
+	position: absolute;
+}
+.Nshang .Nxian{
+	width: 0.1rem;
+	height: 0.05rem;
+	border-radius: 0.02rem;
+	background-color: #44b5ff;
+	position: relative;
+	top: 0.18rem;
+	left: 2.3rem;
+}
+.Nshang .Nxian2{
+	width: 0.1rem;
+	height: 0.05rem;
+	border-radius: 0.02rem;
+	background-color: #44b5ff;
+	position: relative;
+	top: -0.2rem;
+	left: 5.2rem;
+}
+.Nshang h3{
+	color: #000;
+	margin-top: -0.1rem;
+	margin-left: 0.16rem;
+}
+.Nbian{
+	width: 6.74rem;
+	height: 0.02rem;
+	background: #eef1f2;
+	margin-left: 0.34rem;
+	margin-top: 3.2rem;
+}
+.Nzi{
+	color: #7d7f7f;
+	font-size: 0.26rem;
+	letter-spacing: 0.02rem;
+	line-height: 0.6rem;
+	font-weight: bold;
+	margin-top: 0.8rem;
+	margin-left: 0.34rem;
+	padding-right: 0.34rem;
+}
+.Nzi p{
+	margin-top: 0.3rem;
+}

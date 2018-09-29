@@ -1,0 +1,391 @@
+/*
+* @Author: xiaojiejieJ
+* @Date:   2018-09-27 09:50:13
+* @Last Modified by:   xiaojiejieJ
+* @Last Modified time: 2018-09-28 14:15:12
+*/
+body{
+	background-color: #fbfeff;
+}
+header{
+    width:100%;
+    height: 1rem;
+    background:#fff;
+    box-shadow: 0 0.05rem 0.5rem 0.1rem rgba(41,167,255,0.13);
+    padding:0 0.24rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    left: 0;
+    padding:0 0.24rem;
+}
+header p{
+    display: block;
+    font-size: 0.38rem;
+    line-height: 0.9rem;
+    color: #4ebbfe;
+    line-height: 1rem;
+}
+header a{
+    text-align: center;
+    display: block;
+    color: #36a8fe;
+    margin-top: 0.3rem;
+ }
+header i{
+    font-size:0.38rem ;
+    color: #36a8fe;
+    line-height: 1rem;
+}
+
+.Nmp{
+	width: 6.45rem;
+	height: 1.92rem;
+	background: #fff;
+	border-radius: 0.1rem;
+	border: 0.02rem solid #f1f5f7;
+	left: 0.5rem;
+	top: 1.7rem;
+	position: absolute;
+	z-index: 10;
+}
+.Ntx{
+	width: 1.6rem;
+	height: 1.6rem;
+	background-image: url('../img/Ntouxiang.png');
+	background-size: 100% 100%;
+}
+.Nzi{
+	width: 2.6rem;
+	height: 0.72rem;
+	margin-top: -1.24rem;
+	margin-left: 1.44rem;
+}
+.Nzi h3{
+	font-size: 0.3rem;
+	color: #7f7f7f;
+}
+.Nzi .Nxiao{
+	width: 2.44rem;
+	height: 0.25rem;
+	display: flex;
+	font-size: 0.22rem;
+	margin-top: 0.2rem;
+}
+.Nzi .Nxiao .Nxdd{
+	width: 0.08rem;
+	height: 0.08rem;
+	border-radius:50%;
+	background-color: #29c99a;
+	margin-top: 0.1rem;
+}
+.Nzi .Nxiao h4{
+    color: #bcbcbc;
+    margin-left: 0.1rem;
+}
+.Nzi .Nxiao span{
+    color: #59bffe;
+    margin-left: 0.1rem;
+}
+.Nzi .Nxiao h5{
+    color: #e2e2e2;
+    font-size: 0.22rem;
+    margin-left: 0.1rem;
+}
+.Nlzi{
+	width: 1.4rem;
+	height: 0.26rem;
+	margin-top: -0.68rem;
+	margin-left: 4.76rem;
+	display: flex;
+}
+.Nlzi h4{
+	font-size: 0.2rem;
+	color: #47b1fe;
+}
+.Nlzi .Ndian{
+	width: 0.5rem;
+	height: 100%;
+	display: flex;
+}
+.Nlzi .Ndian .Ndd1{
+    width: 0.08rem;
+	height: 0.08rem;
+	border-radius:50%;
+	background-color: #47b1fe;
+	margin-top: 0.1rem;
+	margin-left: 0.1rem;
+}
+.Nlzi .Ndian .Ndd2{
+    width: 0.08rem;
+	height: 0.08rem;
+	border-radius:50%;
+	background-color: #a1d7ff;
+	margin-top: 0.1rem;
+	margin-left: 0.1rem;
+}
+.Nlzi .Ndian .Ndd3{
+    width: 0.08rem;
+	height: 0.08rem;
+	border-radius:50%;
+	background-color: #c4e6ff;
+	margin-top: 0.1rem;
+	margin-left: 0.1rem;
+}
+.Nhuiyuan{
+	width: 6.07rem;
+	height: 0.32rem;
+	display: flex;
+	margin-top: 0.8rem;
+	margin-left: 0.18rem;
+}
+.Nhuiyuan .Nzuo{
+	width: 2rem;
+	height: 0.32rem;
+	display: flex;
+}
+.Nhuiyuan .Nzuo img{
+	width: 0.35rem;
+	height: 0.30rem;
+	margin-top: 0.02rem;
+}
+.Nhuiyuan .Nzuo h5{
+	font-size: 0.22rem;
+	color: #b3b3b3;
+}
+.Nzhong{
+	width: 4rem;
+	height: 0.05rem;
+	margin-left: 0.2rem;
+}
+.Nzhong .Ntiao1{
+	width: 100%;
+	height: 0.05rem;
+	background-color: #ddf3fe;
+	margin-top: 0.1rem;
+	/* border-radius:0.05rem; */
+}
+.Nzhong .Ntiao2{
+	width: 75%;
+	height: 0.05rem;
+	background: linear-gradient(to right,#36acfe,#34e0c6);
+	margin-top: -0.05rem;
+}
+.Nhuiyuan .Nyou{
+	width: 1.8rem;
+	height: 0.32rem;
+	display: flex;
+	margin-left: 0.5rem;
+}
+.Nhuiyuan .Nyou img{
+	width: 0.35rem;
+	height: 0.30rem;
+	margin-top: 0.02rem;
+	margin-left: -0.2rem;
+}
+.Nhuiyuan .Nyou h5{
+	font-size: 0.22rem;
+	color: #b3b3b3;
+	margin-left: 0.1rem;
+}
+.Ncontent{
+	width: 100%;
+	height: 2.38rem;
+	background-color: #fbfeff;
+	padding-left: 0.24rem;
+	padding-right: 0.24rem;
+	margin-top: 2.3rem;
+
+}
+.Ncontent .Nimg{
+	width: 100%;
+	height: 2.32rem;
+
+	background-image: url('../img/Nhybj.png');
+	background-size: cover;
+	background-position: center;
+
+}
+.Nwenzi{
+	width: 1.68rem;
+	height: 0.4rem;
+	font-size: 0.32rem;
+	left: 0.34rem;
+	top: 4.38rem;
+	position: absolute;
+}
+.Nwenzi .Nxian{
+	width: 0.1rem;
+	height: 0.05rem;
+	border-radius: 0.02rem;
+	background-color: #44b5ff;
+	position: relative;
+	top: 0.18rem;
+}
+.Nwenzi h3{
+	color: #4f5b64;
+	margin-top: -0.1rem;
+	margin-left: 0.16rem;
+}
+.Nwenzi h3 span{
+	color: #44b5ff;
+}
+.Ntequan{
+	width: 6.74rem;
+	height: 2.72rem;
+	top: 5.22rem;
+	left: 0.34rem;
+	position: absolute;
+	color: #a9aeb1;
+	font-size: 0.24rem;
+	letter-spacing: 0.02rem;
+}
+.Ntequan .Nfuwu{
+    position: relative;
+}
+.Ntequan .Nfuwu img{
+    width: 2rem;
+    height: 2rem;
+}
+.Ntequan .Nfuwu h3{
+	margin-left: 0.34rem;
+	margin-top: -0.16rem;
+}
+.Ntequan .Nzhekou{
+    position: relative;
+    margin-left: 2rem;
+    margin-top: -2.3rem;
+}
+.Ntequan .Nzhekou img{
+    width: 2.1rem;
+    height: 2.1rem;
+}
+.Ntequan .Nzhekou h3{
+	margin-left: 0.4rem;
+	margin-top: -0.24rem;
+}
+
+.Ndi{
+	width: 3rem;
+	height: 0.4rem;
+	font-size: 0.32rem;
+	left: 0.34rem;
+	top: 8.8rem;
+	position: absolute;
+}
+.Ndi .Nxian{
+	width: 0.1rem;
+	height: 0.05rem;
+	border-radius: 0.02rem;
+	background-color: #44b5ff;
+	position: relative;
+	top: 0.18rem;
+}
+.Ndi h3{
+	color: #4f5b64;
+	margin-top: -0.1rem;
+	margin-left: 0.16rem;
+}
+.Ndi h3 span{
+	color: #44b5ff;
+}
+
+
+.Ndy{
+	width: 3rem;
+	height: 0.26rem;
+	top: 8.8rem;
+	left: 5.4rem;
+	position: absolute;
+	display: flex;
+}
+.Ndy h4{
+	font-size: 0.28rem;
+	color: #979899;
+}
+.Ndy .Ndian{
+	width: 0.5rem;
+	height: 100%;
+	display: flex;
+	margin-top: 0.08rem;
+}
+.Ndy .Ndian .Ndd1{
+    width: 0.08rem;
+	height: 0.08rem;
+	border-radius:50%;
+	background-color: #646666;
+	margin-top: 0.1rem;
+	margin-left: 0.1rem;
+}
+.Ndy .Ndian .Ndd2{
+    width: 0.08rem;
+	height: 0.08rem;
+	border-radius:50%;
+	background-color: #c4c6c7;
+	margin-top: 0.1rem;
+	margin-left: 0.1rem;
+}
+.Ndy .Ndian .Ndd3{
+    width: 0.08rem;
+	height: 0.08rem;
+	border-radius:50%;
+	background-color: #c9cbcc;
+	margin-top: 0.1rem;
+	margin-left: 0.1rem;
+}
+
+
+.Ntq2{
+	width: 6.74rem;
+	height: 2.72rem;
+	top: 5.22rem;
+	left: 0.34rem;
+	position: absolute;
+	color: #a9aeb1;
+	font-size: 0.24rem;
+	letter-spacing: 0.02rem;
+
+}
+.Ntq2 .Nfuwu{
+    position: relative;
+    margin-left: 2rem;
+    margin-top: -2.28rem;
+}
+.Ntq2 .Nfuwu img{
+    width: 2rem;
+    height: 2rem;
+
+}
+.Ntq2 .Nfuwu h3{
+	margin-left: 0.34rem;
+	margin-top: -0.16rem;
+}
+.Ntq2 .Nzhekou{
+    position: relative;
+    margin-left: 4rem;
+    margin-top: -2.3rem;
+}
+.Ntq2 .Nzhekou img{
+    width: 2.1rem;
+    height: 2.1rem;
+}
+.Ntq2 .Nzhekou h3{
+	margin-left: 0.4rem;
+	margin-top: -0.24rem;
+}
+.Ntq2 .Nkuaisu{
+    position: relative;
+    margin-left: -0.4rem;
+    margin-top: 4.38rem;
+}
+.Ntq2 .Nkuaisu img{
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.2rem;
+}
+.Ntq2 .Nkuaisu h3{
+	margin-left: 0.34rem;
+	margin-top: -0.16rem;
+}
