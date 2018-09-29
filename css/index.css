@@ -59,18 +59,10 @@ header a{
     background-repeat: no-repeat;
     background-size: 0.4rem 0.4rem;
     background-position: 97%;
-}
-.search input::-webkit-input-placeholder{
+    color: #000;
     font-size: 0.24rem;
-    color: #c8d9e6;
-}
-.sousuo{
-    width: 6rem ;
-    height: 0.5rem;
-    /*background: red;*/
-    position: absolute;
-    top:1.15rem ;
-    right: 0.3rem;
+    font-weight: bold;
+    opacity: 0.6;
 }
 /*搜索框结束*/
 
