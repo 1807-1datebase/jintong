@@ -15,27 +15,30 @@
 </head>
 <body>
 <div class="frame">
-<!--顶部开始-->
-<header>
-    <a href="" class="iconfont icon-fanhui"></a>
-    <p>晋彤</p>
-    <i class="iconfont "></i>
-</header>
-<!--顶部结束-->
+    <!--顶部开始-->
+    <header>
+        <a href="" class="iconfont icon-fanhui"></a>
+        <p>晋彤</p>
+        <i class="iconfont "></i>
+    </header>
+    <!--顶部结束-->
 
 
-
-<!--搜索框开始-->
-<div class="search">
-    <a href="zcy-address.html"><div class="city">
-    <span>太原</span>
-    <i class="iconfont icon-xiala"></i>
-  </div></a>
-    <input type="text" placeholder="搜索你需要的服务  商品">
+    <!--搜索框开始-->
+    <div class="search">
+        <a href="zcy-address.html">
+            <div class="city">
+                <span>太原</span>
+                <i class="iconfont icon-xiala"></i>
+            </div>
+        </a>
+        <input type="text" placeholder="搜索你需要的服务  商品">
+    </div>
+    <a href="zcy-search.html">
+        <div class="sousuo"></div>
+    </a>
+    <!--搜索框结束-->
 </div>
-<!--搜索框结束-->
-</div>
-
 
 
 <!--轮播图开始-->
@@ -51,14 +54,14 @@
 <!--轮播图结束-->
 
 
-
 <!--分类开始-->
 <section>
     <ul>
-        <a href="dp_slzh.html"><li>
-            <img src="img/index/1.png" alt="">
-            <p>水路综合</p>
-        </li>
+        <a href="dp_slzh.html">
+            <li>
+                <img src="img/index/1.png" alt="">
+                <p>水路综合</p>
+            </li>
         </a>
         <li>
             <img src="img/index/2.png" alt="">
@@ -93,37 +96,40 @@
 <!--分类结束-->
 
 
-
 <!--底部开始-->
 <footer>
-  <ul>
-      <a href="index.html"><li class="index">
-        <img src="img/index/index-yes.png" alt="">
-        <p>首页</p>
-    </li></a>
-     <li class="shop">
-        <img src="img/index/shop-no.png" alt="">
-        <p>商城</p>
-    </li>
-    <li class="enter">
+    <a href="index.html">
+        <div class="index">
+            <img src="img/index/index-yes.png" alt="">
+            <p>首页</p>
+        </div>
+    </a>
+    <a href="dp_xihu.html">
+        <div class="index shop">
+            <img src="img/index/shop-no.png" alt="">
+            <p>商城</p>
+        </div>
+    </a>
+    <div class="index enter">
         <img src="img/index/enter-no.png" alt="">
         <p>入驻</p>
-    </li>
-      <a href="booking.html"><li class="order">
-        <img src="img/index/order-no.png" alt="">
-        <p>订单</p>
-    </li></a>
-      <a href="P_grzx.html"><li class="my">
+    </div>
+    <a href="booking.html">
+        <div class="index order">
+            <img src="img/index/order-no.png" alt="">
+            <p>订单</p>
+        </div>
+    </a>
+    <a href="P_grzx.html"><div class="index my">
         <img src="img/index/my-no.png" alt="">
         <p>我的</p>
-    </li></a>
-  </ul>
+    </div></a>
 </footer>
 <!--底部结束-->
 
 
-
 <div class="set">
+
     <ul>
         <li>
             <img src="img/index/set1.png" alt="">
@@ -134,12 +140,14 @@
             <p>水司入驻</p>
         </li>
     </ul>
-    <div class="close">×</div>
+    <div class="close" style="display: flex; align-items: center; justify-content: center;">
+        <img src="img/cyj_cuowu.png" alt="" style="width: 0.2rem;height: 0.2rem;">
+    </div>
 </div>
 </body>
 </html>
 <script>
-    var mySwiper = new Swiper ('.swiper-container', {
+    var mySwiper = new Swiper('.swiper-container', {
         direction: 'horizontal', // 垂直切换选项
         loop: true, // 循环模式选项
 
@@ -151,7 +159,7 @@
 </script>
 <script>
     var mySwiper = new Swiper('.swiper-container', {
-        autoplay:true,//等同于以下设置
+        autoplay: true,//等同于以下设置
         /*autoplay: {
          delay: 3000,
          stopOnLastSlide: false,
