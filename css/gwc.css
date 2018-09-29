@@ -2,8 +2,9 @@
 * @Author: Dell
 * @Date:   2018-09-27 08:58:32
 * @Last Modified by:   Dell
-* @Last Modified time: 2018-09-27 17:49:21
+* @Last Modified time: 2018-09-29 13:25:51
 */
+/*顶部开始*/
 header{
     width:100%;
     height: 1rem;
@@ -16,7 +17,7 @@ header{
     position: fixed;
     top:0;
     left: 0;
-    padding:0 0.24rem;
+    /* padding:0 0.24rem; */
 }
 header p{
     display: block;
@@ -25,11 +26,19 @@ header p{
     color: #4ebbfe;
     line-height: 1rem;
 }
+header a{
+    text-align: center;
+    display: block;
+    color: #36a8fe;
+    margin-top: 0.35rem;
+ }
 header i{
     font-size:0.38rem ;
     color: #36a8fe;
     line-height: 1rem;
 }
+
+
 /*顶部结束*/
 
 nav{

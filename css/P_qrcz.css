@@ -1,0 +1,130 @@
+/*
+* @Author: Dell
+* @Date:   2018-09-28 15:49:54
+* @Last Modified by:   Dell
+* @Last Modified time: 2018-09-29 13:22:43
+*/
+/*顶部开始*/
+header{
+    width:100%;
+    height: 1rem;
+    background:#fff;
+    box-shadow: 0 0.05rem 0.5rem 0.1rem rgba(41,167,255,0.13);
+    padding:0 0.24rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    left: 0;
+    /* padding:0 0.24rem; */
+}
+header p{
+    display: block;
+    font-size: 0.38rem;
+    line-height: 0.9rem;
+    color: #4ebbfe;
+    line-height: 1rem;
+}
+header a{
+    text-align: center;
+    display: block;
+    color: #36a8fe;
+    margin-top: 0.35rem;
+ }
+header i{
+    font-size:0.38rem ;
+    color: #36a8fe;
+    line-height: 1rem;
+}
+
+
+/*顶部结束*/
+nav{
+	margin-top: 1.3rem;
+	width: 100%;
+	height:1.5rem;
+}
+.P_sbv{
+    display: block;
+    float: left;
+    width: 0.1rem;
+    height: 0.05rem;
+    background-color: #9fffd4;
+    border-radius: 0.5rem;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    box-shadow: 0 0.02rem 0.05rem 0 rgba(68,181,255,0.43);
+}
+.pic{
+	width: 100%;
+	height: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.pic h5{
+	font-size: 0.28rem;
+	color: #cdd5d8;
+}
+.pic i{
+	font-size: 0.28rem;
+	color: #2dd391;
+	font-weight: bolder;
+}
+.pic h1{
+	font-size: 0.28rem;
+	color: #2dd391;
+}
+
+footer{
+	width: 100%;
+	height:0.6rem;
+	padding: 0.24rem;
+
+}
+.P_di{
+	width: 100%;
+	height: 2rem;
+	border-top: 1px solid #f1f5f6;
+	font-size:0.2rem;
+	color:#98999b;
+	text-align: center;
+	line-height: 0.6rem;  
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.P_zf{
+	width: 50%;
+	height:0.56rem; 
+	display: flex;
+	align-items: center;
+}
+.P_zf img{
+	width: 1.06rem;
+	height:1.03rem; 
+}
+.P_yd{
+	width:0.25rem;
+	height: 0.25rem;
+	background: #fff;
+	border: 0.1rem solid #36a8fe; 
+	border-radius: 50%;
+}
+.P_bc{
+	width: 2.25rem;
+	height: 0.4rem;
+	background: linear-gradient(to right,#37e071,#34da89,#32d698);
+	border-radius: 0.5rem;
+	font-size: 0.1rem;
+	color: #fff;
+	text-align: center;
+	line-height: 0.4rem;
+	position: absolute;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom:0rem;
+	margin: auto; 
+}

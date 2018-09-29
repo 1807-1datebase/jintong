@@ -1,0 +1,140 @@
+/*
+* @Author: Dell
+* @Date:   2018-09-28 15:49:54
+* @Last Modified by:   Dell
+* @Last Modified time: 2018-09-29 13:14:55
+*/
+/*顶部开始*/
+header{
+    width:100%;
+    height: 1rem;
+    background:#fff;
+    box-shadow: 0 0.05rem 0.5rem 0.1rem rgba(41,167,255,0.13);
+    padding:0 0.24rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    left: 0;
+    /* padding:0 0.24rem; */
+}
+header p{
+    display: block;
+    font-size: 0.38rem;
+    line-height: 0.9rem;
+    color: #4ebbfe;
+    line-height: 1rem;
+}
+header a{
+    text-align: center;
+    display: block;
+    color: #36a8fe;
+    margin-top: 0.35rem;
+ }
+header i{
+    font-size:0.38rem ;
+    color: #36a8fe;
+    line-height: 1rem;
+}
+
+
+/*顶部结束*/
+nav{
+	margin-top: 1.3rem;
+	width: 100%;
+	height:3rem;
+}
+.P_pic{
+	width: 100%;
+	height: 3rem;	
+}
+
+
+footer{
+	margin-top: 0.2rem;
+	width: 100%;
+	height:0.6rem;
+	padding: 0.24rem;
+
+}
+.P_di{
+	width: 100%;
+	height: 2rem;
+	border-top: 1px solid #f1f5f6;
+	font-size:0.2rem;
+	color:#98999b;
+	text-align: center;
+	line-height: 0.6rem;  
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.P_bc{
+	width: 2.25rem;
+	height: 0.4rem;
+	background: linear-gradient(to right,#37e071,#34da89,#32d698);
+	border-radius: 0.5rem;
+	font-size: 0.1rem;
+	color: #fff;
+	text-align: center;
+	line-height: 0.4rem;
+}
+.P_pic ul{
+	width: 100%;
+	height:2.8rem;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+.P_pic ul li{
+	width: 32%;
+	height: 47%;
+	padding:0.17rem ;
+	border-radius: 0.1rem;
+	background: #f1faff;
+	color:#42a9f4 
+}
+.P_pic ul li h1{
+	font-size:0.2rem;
+	/* color:;   */
+}
+.P_pic ul li span{
+	font-size:0.2rem;
+	color:#a8d6f7;  
+}
+.P_yj{
+	width:100%;
+	height: 50%;
+	display: flex; 
+	justify-content: center;
+}
+.P_sj{
+	width:100%;
+	height: 50%;
+	display: flex; 
+	justify-content: center;
+}
+.P_sj p{
+	font-size:0.18rem;
+	/* color:#42a9f4; */
+}
+.P_sj h3{
+	font-size:0.18rem;
+	/* color:#42a9f4; */
+}
+.P_di input{
+    width: 60%;
+    height: 0.6rem;
+    background: #f2faff;
+    border:0.02rem solid #e8f6ff;
+    outline: none;
+    padding-left: 0.1rem;
+  
+}
+.P_di input::-webkit-input-placeholder{
+    font-size: 0.24rem;
+    color: #c8d9e6;
+}
