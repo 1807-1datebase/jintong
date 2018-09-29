@@ -181,7 +181,7 @@ main .center .moren .right{
     align-items: center;
 }
 main .center .moren .right span{
-    padding:0 0.2rem;
+    /*padding:0 0.2rem;*/
 }
 main .center .moren .icon-xiayibu{
     font-size: 0.22rem;

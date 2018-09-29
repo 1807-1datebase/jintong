@@ -24,7 +24,7 @@
                 <h2>张三丰</h2>
                 <p class="call" style="font-weight: bolder;">182 **** 9907</p>
             </div>
-            <a href="cyj_cydz.html"><div class="iconfont icon-xiayibu"></div></a>
+            <a href="cyj_xinzengdz.html"><div class="iconfont icon-xiayibu"></div></a>
         </div>
         <div class="xinxi adress">
             <h2></h2>
@@ -52,7 +52,8 @@
         <div class="xinxi2">
             <p class="adress adress1" style="color: #000000; opacity: 0.3;">给服务人员捎句话...</p>
             <div class="photo">
-                <img src="img/zyxxiangji.png" alt="">
+                <input type="file" name="img" style="display: none;">
+                <img src="img/zyxxiangji.png" alt="" id="imgUploads">
             </div>
         </div>
     </div>
@@ -62,12 +63,11 @@
             <div class="left">
                 <h2><span>预约</span>时间</h2>
             </div>
-            <div class="right right1"><h2 style="color: black; opacity: 0.3;">推荐</h2><span>05.03   14:00-15:30</span>
+            <div class="right right1"><h2 style="color: black; opacity: 0.3;">推荐</h2><span><span class="day">05.03</span>   <span class="time">14:00-15:30</span></span>
                 <a href=""><div class="iconfont icon-xiayibu"></div></a>
             </div>
         </div>
     </div>
-
 </main>
 <footer>
     <div class="center">
@@ -76,7 +76,7 @@
             <h2>定金：<span>￥30</span></h2>
         </div>
     </div>
-    <a href=""><div class="xinzeng">立即付款</div></a>
+    <a href="cyj_zhifu.html"><div class="xinzeng">立即付款</div></a>
 </footer>
 <div class="date">
     <div class="box">
@@ -166,7 +166,7 @@
         </ul>
     </div>
     <div class="bottom">
-        <a href=""><div class="xinzeng">
+        <a href="javascript:;"><div class="xinzeng xinzeng1">
             确认
         </div>
         </a>
@@ -182,11 +182,14 @@
     $(".close").click(function () {
         $(".date").css("transform","scale(0)");
     })
+    $(".xinzeng1").click(function () {
+        $(".date").css("transform","scale(0)");
+    })
     // console.log($(".list"));
     let lis=$(".list");
     let son=$(".son");
     let li=$("li");
-    console.log(li);
+    // console.log(li);
     // son.eq(0).css("zIndex","2");
     son.eq(0).css("display","flex");
     lis.eq(0).addClass("hot");
@@ -195,12 +198,19 @@
         // console.log(i);
         $(this).addClass("hot").siblings().removeClass("hot");
         son.eq(i).css("display","flex").siblings().css("display","none");
+        $(".day").html($(this).find('span').html());
     })
 
     li.eq(6).addClass("act");
     li.click(function () {
         let i=$(this).index();
+        li.removeClass("act");
         $(this).toggleClass("act");
+        $(".time").html($(this).html());
+    })
+
+    $("#imgUploads").click(function () {
+        $(this).prev().click();
     })
 
     // son.click(function (e) {

@@ -41,6 +41,13 @@ main .container{
     padding:0.2rem 0 0.2rem 0.2rem;
     box-sizing: border-box;
 }
+main .container .xinxi  input{
+    border:none;
+    background-color: #e7f6ff;
+    font-weight: normal;
+    font-size: 0.20rem;
+    outline:none;
+}
 
 /*main .container .xinxi h2{*/
     /*width: 0.72rem;*/
