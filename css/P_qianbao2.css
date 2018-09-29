@@ -2,7 +2,7 @@
 * @Author: Dell
 * @Date:   2018-09-28 15:49:54
 * @Last Modified by:   Dell
-* @Last Modified time: 2018-09-29 13:14:55
+* @Last Modified time: 2018-09-29 16:56:04
 */
 /*顶部开始*/
 header{
@@ -44,6 +44,7 @@ nav{
 	margin-top: 1.3rem;
 	width: 100%;
 	height:3rem;
+	padding: 0.24rem;
 }
 .P_pic{
 	width: 100%;

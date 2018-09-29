@@ -2,7 +2,7 @@
 * @Author: Dell
 * @Date:   2018-09-27 08:58:32
 * @Last Modified by:   Dell
-* @Last Modified time: 2018-09-29 13:25:51
+* @Last Modified time: 2018-09-29 15:16:01
 */
 /*顶部开始*/
 header{
@@ -120,6 +120,30 @@ nav{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+.jian span{
+	width: 0.4rem;
+	height: 0.4rem;
+	background-color:#EBF7FF; 
+	float: left;
+	text-align: center;
+	box-shadow: 0.13rem;
+	display: block;
+	border-radius: 50%;
+	font-size: 0.35rem;
+	color: #3BACFE;
+}
+.jia span{
+	width: 0.4rem;
+	height: 0.4rem;
+	background-color:#3BACFE; 
+	float: left;
+	text-align: center;
+	box-shadow: 0.13rem;
+	display: block;
+	border-radius: 50%;
+	font-size: 0.35rem;
+	color: #EBF7FF;
 }
 .P_middle_dx{
 	width: 0.25rem;
