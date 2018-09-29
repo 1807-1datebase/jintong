@@ -2,7 +2,7 @@
 * @Author: 我的文档
 * @Date:   2018-09-27 08:55:56
 * @Last Modified by:   我的文档
-* @Last Modified time: 2018-09-28 16:36:40
+* @Last Modified time: 2018-09-29 10:20:59
 */
 body{
 	background: #fbfeff;
@@ -29,7 +29,7 @@ header p{
     color: #4ebbfe;
     line-height: 1rem;
 }
-header i{
+header a{
     font-size:0.38rem ;
     color: #36a8fe;
     line-height: 1rem;

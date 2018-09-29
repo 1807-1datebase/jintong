@@ -2,7 +2,7 @@
 * @Author: 我的文档
 * @Date:   2018-09-28 08:46:30
 * @Last Modified by:   我的文档
-* @Last Modified time: 2018-09-28 16:37:26
+* @Last Modified time: 2018-09-29 10:33:37
 */
 body{
     background: #fbfeff;
@@ -130,7 +130,7 @@ header i{
 	margin-top: 0.36rem;
 	margin-right: 0.08rem;
 }
-.container .ti h5{
+.container .ti a{
 	font-size: 0.3rem;
 	color: #44b5ff;
 	float: right ;
