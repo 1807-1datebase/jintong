@@ -4,29 +4,29 @@ html,body{
 header{
     width:100%;
     height: 1rem;
-    background:#fbfeff;
-    box-shadow: 0 0.05rem 0.5rem 0.1rem rgba(41,167,255,0.13);
+    background: #fbfeff;
+    box-shadow: 0 0.05rem 0.5rem 0.05rem rgba(41,167,255,0.13);
     padding:0 0.24rem;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     position: fixed;
     top:0;
     left: 0;
-    padding:0 0.24rem;
 }
 header p{
+     /*display: block;*/
+     font-size: 0.38rem;
+     color: #4ebbfe;
+     text-align: center;
+     /*line-height: 1rem;*/
+ }
+header a{
+    text-align: center;
     display: block;
-    font-size: 0.38rem;
-    line-height: 0.9rem;
-    color: #4ebbfe;
-    line-height: 1rem;
-}
-header i{
-    font-size:0.38rem ;
-    color: #36a8fe;
-    line-height: 1rem;
-}
+     color: #36a8fe;
+ }
 /*顶部结束*/
 
 
@@ -43,50 +43,54 @@ main .title{
     justify-content: space-around;
     position: relative;
 }
-main .title .this{
+main .title .border1{
     width: 0.9rem;
     height: 0.05rem;
     background-color: #5cb3f1;
     position: absolute;
     top:1rem;
     left: 0.9rem;
+    display: block;
 }
-main .title .that{
+main .title .border2{
     width: 0.9rem;
     height: 0.05rem;
     background-color: #5cb3f1;
     position: absolute;
     top:1rem;
     left: 3.7rem;
+    display: none;
 }
-main form{
+main ul{
+    display: flex;
+    flex-direction: column;
     margin-top: 0.5rem;
 }
-main form input{
-    padding:0.2rem 0;
+main ul li{
+    display: flex;
+    align-items: center;
+    border-bottom: 0.01rem solid #f3f6f7;
+    padding:0.2rem;
+}
+main ul li img{
+    margin-right: 0.2rem;
+}
+main ul li p{
+    margin-right: 0.2rem;
+    color: #40b1ff;
+    font-size: 0.20rem;
+}
+main ul li input{
     width: 100%;
     outline: none;
     border: none;
-    border-bottom: 0.01rem solid #f3f6f7;
     background-color: inherit;
 }
-main form input::-webkit-input-placeholder{
+main ul li input::-webkit-input-placeholder{
     font-size: 0.2rem;
     color: #d6d8d9;
 }
-main form .phone{
-    padding-left: 1.25rem;
-    background-image: url("../img/index/phone.png");
-    background-repeat: no-repeat;
-    background-position: left center;
-}
-main form .number{
-    padding-left: 0.65rem;
-    background-image: url("../img/index/dot4.png");
-    background-repeat: no-repeat;
-    background-position: left center;
-}
-main form .message{
+main ul li .message{
     width: 1.56rem;
     height: 0.43rem;
     border-radius: 0.22rem;
@@ -96,11 +100,9 @@ main form .message{
     font-size: 0.22rem;
     text-align: center;
     line-height: 0.43rem;
-    position: absolute;
-    top:5.9rem;
-    right:1.2rem;
 }
-main form button{
+
+main  button{
     width: 3.85rem;
     height: 0.5rem;
     background:#e7f6ff ;
@@ -110,15 +112,4 @@ main form button{
     margin: 0.4rem 0.7rem;
     color: #8acefe;
     font-size: 0.2rem;
-}
-main .bottom .dian{
-    width: 0.25rem;
-    height: 0.25rem;
-    background: #e7f6ff;
-    border-radius: 50%;
-    margin-top: 0.07rem;
-    margin-right: 0.1rem;
-}
-main .bottom{
-    display: flex;
 }
