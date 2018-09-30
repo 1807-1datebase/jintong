@@ -2,7 +2,7 @@
 * @Author: Dell
 * @Date:   2018-09-28 15:49:54
 * @Last Modified by:   Dell
-* @Last Modified time: 2018-09-29 16:56:04
+* @Last Modified time: 2018-09-30 08:44:33
 */
 /*顶部开始*/
 header{
@@ -70,17 +70,17 @@ footer{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	
 
 }
-.P_bc{
-	width: 2.25rem;
-	height: 0.4rem;
-	background: linear-gradient(to right,#37e071,#34da89,#32d698);
-	border-radius: 0.5rem;
-	font-size: 0.1rem;
-	color: #fff;
-	text-align: center;
-	line-height: 0.4rem;
+.xinzeng{
+    width: 2.25rem;
+    height: 0.6rem;
+    text-align: center;
+    line-height: 0.6rem;
+    border-radius: 0.3rem;
+    background:-webkit-linear-gradient(left,rgb(55,224,111),rgb(49,214,154));
+  	color: #fff;
 }
 .P_pic ul{
 	width: 100%;

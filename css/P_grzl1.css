@@ -2,7 +2,7 @@
 * @Author: Dell
 * @Date:   2018-09-28 14:11:14
 * @Last Modified by:   Dell
-* @Last Modified time: 2018-09-29 11:49:15
+* @Last Modified time: 2018-09-30 08:46:55
 */
 /*顶部开始*/
 header{
@@ -120,19 +120,19 @@ header i{
 	margin-top:1rem;
 	position: relative;  
 }
-.P_bc{
-	width: 2.25rem;
-	height: 0.4rem;
-	background: linear-gradient(to right,#37e071,#34da89,#32d698);
-	border-radius: 0.5rem;
-	font-size: 0.1rem;
-	color: #fff;
-	text-align: center;
-	line-height: 0.4rem;
-	position: absolute;
-	top:0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	margin: auto; 
+.xinzeng{
+    width: 4.54rem;
+    height: 0.6rem;
+    text-align: center;
+    line-height: 0.6rem;
+    border-radius: 0.3rem;
+    background:-webkit-linear-gradient(left,rgb(55,224,111),rgb(49,214,154));
+    position: absolute;
+    top:1rem;
+    left:0;
+    right:0;
+    margin:0 auto;
+    font-size: 0.24rem;
+    color:#fff;
+    box-shadow: 0 0 10px rgb(49,214,154);
 }
