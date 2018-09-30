@@ -13,7 +13,7 @@
 <script src="js/jquery-3.3.1.js"></script>
 <body>
 <header>
-	<a href="dp_spxq_bao.html"><i class="iconfont icon-fanhui"></i></a>
+	<a href="mwd_Tuikuanxiangqing.html"><i class="iconfont icon-fanhui"></i></a>
 	<p>商品详情</p>
 	<i class="iconfont "></i>
 </header>
@@ -67,7 +67,7 @@
 				</ul>
 			</div>
 			<div class="miao">
-				01``43
+				0<span class="aa">1</span>``<span class="bb">43</span>
 			</div>
 		</div>
 		
@@ -79,19 +79,73 @@
 </body>
 </html>
 <script>
-    let t=setInterval(move,1000);
+	let num=43;
+	let use=1;
+    let t=setInterval(move,100);
     function move() {
 
-            let divs=$(".tallk-three .hua_kuang li");
+       let divs=$(".tallk-three .hua_kuang li");
 	   for (i=0;i<20;i++) {
         let w=Math.round(Math.random()*20+1);
         divs.eq(i).css("height",w);
 	     }
     }
-        clearInterval(t);
-    laba=$(".laba");
-    console.log($(".laba"));
-    $(".laba").click(function () {
-        t=setInterval(move,100);
+
+    laba=$(".talk-three .hua_kuang");
+    console.log($(".tallk-three .hua_kuang"));
+    // $(".hua_kuang").click(function () {
+    //     t=setInterval(move,100);
+    // })
+    $(".tallk-three .hua_kuang").click(function () {
+        $(".tallk-three .hua_kuang li").toggleClass("hot");
+        let a=setInterval(moves,1000);
+        function moves(){
+            num--;
+            if (num<=0){
+                use--;
+			} 
+			if (num<=0) {
+                num=60;
+			}
+			if (use<=0){
+                use=0;
+			}
+            $(".tallk-three .miao .aa").html(use);
+            $(".tallk-three .miao .bb").html(num);
+		}
+
     })
+
+
+
+	let aa=$(".tallk-three .miao .aa");
+    let bb=$(".tallk-three .miao .bb");
+    jian.click(function () {
+
+        if (num <= 0) {
+            num = 9;
+            use -= 1;
+        } else {
+            num--;
+            as=as-162;
+
+        }
+        if (use<0) {
+            use=0;
+            num=0;
+        }
+
+        $(".liang").html(num);
+        $(".jiajian p").html(use);
+        $(".money-2").html(as);
+    })
+
+
+
+
+
+
+
+
+
 </script>

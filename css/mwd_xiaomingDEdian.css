@@ -163,7 +163,10 @@ header a{
 	/*height: 0.4rem;*/
 	margin:0.05rem;
 	background: white;
-
+	display: none;
+}
+.tallk-three .hua_kuang .hot{
+	display: block;
 }
 .tallk-three .miao{
 	display: block;
