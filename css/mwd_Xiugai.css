@@ -19,7 +19,7 @@ header p{
     color: #4ebbfe;
     line-height: 1rem;
 }
-header i{
+header a{
     font-size:0.38rem ;
     color: #36a8fe;
     line-height: 1rem;
@@ -291,7 +291,7 @@ header i{
     padding-left: 0.22rem;
     padding-right: 0.22rem;
 }
-.title5 .box{
+.title5 .boxs{
     /*width: 1rem;*/
     /*height: 0.9rem;*/
     /*background-color: #FBFEFF;*/
@@ -300,7 +300,7 @@ header i{
     top: 3.2rem;
     /*box-shadow: 0px 4px 11px -1px rgba(55, 223, 116, 0.75);*/
 }
-.title5 .box img{
+.title5 .boxs img{
     width: 1.01rem;
     height: 1.01rem;
 }
@@ -366,7 +366,7 @@ header i{
     height: 0.6rem;
     background: linear-gradient(to right , rgb(55,224,111) ,rgb(49,214,154));
     position: absolute;
-    bottom: 0.4rem;
+    bottom: 0.8rem;
     left: 1.5rem;
     border-radius: 0.6rem;
     box-shadow: 0px 4px 11px -1px rgba(55, 223, 116, 0.75);
@@ -427,9 +427,7 @@ body{
     margin-top: 0.43rem;
 
 }
-.iconfont{
-    font-size: 0.2rem!important;
-}
+
 .bg{
     width: 7.5rem;
     height: 13.34rem;
@@ -438,4 +436,197 @@ body{
     background-color: rgba(100,100,100,0.5);
     display: none;
     z-index: 1;
+}
+
+
+/*退款原因弹框*/
+.box{
+    width: 100%;
+    padding: 0.2rem 0.17rem;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0px -417px 33px 503px rgba(0, 0, 0, 0.43);
+    display: none;
+    z-index: 15;
+    background: white;
+
+}
+.box .header{
+    width: 100%;
+    height: 0.88rem;
+    position: relative;
+}
+.box .header h1{
+    text-align: center;
+    font-size: 0.2rem;
+}
+.box .header h1 span{
+    color: #41b2fc;
+}
+.box .header .icon{
+    width: 0.34rem;
+    height: 0.34rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0.17rem;
+    margin: 0 auto;
+    color: #d1dde6;
+
+}
+
+.box ul li{
+    width: 100%;
+    height: 0.88rem;
+    border-bottom: 0.04rem solid #FAFAFA;
+    padding: 0.3rem 0;
+}
+.box ul li .dian{
+    width: 0.05rem;
+    height: 0.05rem;
+    background: #44b5ff;
+    border-radius: 50%;
+    box-shadow: 0px 4px 24px -1px rgba(59, 172, 254, 0.43);
+    float: left;
+    margin-top: 0.2rem;
+}
+.box ul li h1{
+    font-size: 0.24rem;
+    color: #8a8c8d;
+    display: block;
+    float: left;
+    margin-left: 0.1rem;
+}
+.box ul li .xuan{
+    width: 0.23rem;
+    height: 0.23rem;
+    border:0.08rem solid #3BB1FF;
+    float: right;
+    border-radius: 0.2rem;
+    margin-right: 0.15rem;
+    display: none;
+}
+.box ul li .hot{
+    display: block;
+}
+.box .close{
+    width: 100%;
+    height: 1.76rem;
+    position: relative;
+}
+.box .close .close_1{
+    width: 4.54rem;
+    height: 0.6rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.box .close .close_1 span{
+    width: 4.54rem;
+    height: 0.6rem;
+    font-size: 0.2rem;
+    text-align: center;
+    line-height: 0.6rem;
+    color: white;
+    box-shadow: 0px 4px 24px -1px rgba(72, 213, 112, 0.52);
+    border-radius: 0.5rem;
+    background: linear-gradient(to right , rgb(47,212,187) ,rgb(45,222,87));
+    float: left;
+}
+.boxD{
+    width: 100%;
+    padding: 0.2rem 0.17rem;
+    position: absolute;
+    bottom: 0;
+    display: none;
+    background: white;
+    z-index: 55;
+    box-shadow: 0px -417px 33px 503px rgba(0, 0, 0, 0.43);
+}
+.boxD .header{
+    width: 100%;
+    height: 0.88rem;
+    position: relative;
+}
+.boxD .header h1{
+    text-align: center;
+    font-size: 0.2rem;
+}
+.boxD .header h1 span{
+    color: #41b2fc;
+}
+.boxD .header .icons{
+    width: 0.24rem;
+    height: 0.24rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0.17rem;
+    margin: 0 auto;
+    color: #d1dde6;
+}
+.boxD ul li{
+    width: 100%;
+    height: 0.88rem;
+    border-bottom: 0.04rem solid #FAFAFA;
+    padding: 0.3rem 0;
+}
+.boxD ul li .dian{
+    width: 0.05rem;
+    height: 0.05rem;
+    background: #44b5ff;
+    border-radius: 50%;
+    box-shadow: 0px 4px 24px -1px rgba(59, 172, 254, 0.43);
+    float: left;
+    margin-top: 0.2rem;
+}
+.boxD ul li h1{
+    font-size: 0.24rem;
+    color: #8a8c8d;
+    display: block;
+    float: left;
+    margin-left: 0.1rem;
+}
+.boxD ul li .xuan{
+    width: 0.23rem;
+    height: 0.23rem;
+    border:0.08rem solid #3BB1FF;
+    float: right;
+    border-radius: 0.2rem;
+    margin-right: 0.15rem;
+    display: none;
+
+}
+.boxD ul li .hot{
+    display: block;
+}
+.boxD .close{
+    width: 100%;
+    height: 1.76rem;
+    position: relative;
+}
+.boxD .close .close_1{
+    width: 4.54rem;
+    height: 0.6rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.boxD .close .close_1 span{
+    width: 4.54rem;
+    height: 0.6rem;
+    font-size: 0.2rem;
+    text-align: center;
+    line-height: 0.6rem;
+    color: white;
+    box-shadow: 0px 4px 24px -1px rgba(72, 213, 112, 0.52);
+    border-radius: 0.5rem;
+    background: linear-gradient(to right , rgb(47,212,187) ,rgb(45,222,87));
+    float: left;
 }

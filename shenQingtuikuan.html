@@ -11,16 +11,74 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_853771_fb2ylb6vxch.css">
     <link rel="stylesheet" href="css/shenQingtuikuan.css">
-
+    <script src="js/jquery-3.3.1.js"></script>
 </head>
 <body>
 <!--顶部开始-->
 <header>
-    <i class="iconfont icon-fanhui"></i>
+    <a href="shenQingtuikuan%20-3.html" class="iconfont icon-fanhui"></a>
     <p>申请退款</p>
     <i class="iconfont "></i>
 </header>
 <!--顶部结束-->
+
+
+
+<div class="box">
+    <div class="header">
+        <h1><span>退款</span>原因</h1>
+        <div class="icon iconfont icon-Group-" style="font-size: 0.4rem;" ></div>
+    </div>
+    <ul>
+        <li>
+            <div class="dian">
+
+            </div>
+            <h1>退运费</h1>
+            <div class="xuan "></div>
+        </li>
+        <li>
+            <div class="dian">
+
+            </div>
+            <h1>大小/尺寸与商品描述不符</h1>
+            <div class="xuan"></div>
+        </li>
+        <li>
+            <div class="dian">
+
+            </div>
+            <h1>颜色/款式/型号与商品描述不符</h1>
+            <div class="xuan"></div>
+        </li>
+        <li>
+            <div class="dian">
+
+            </div>
+            <h1>材质与商品描述不符</h1>
+            <div class="xuan"></div>
+        </li>
+        <li>
+            <div class="dian">
+
+            </div>
+            <h1>做工粗糙有瑕疵</h1>
+            <div class="xuan"></div>
+        </li>
+        <li>
+            <div class="dian">
+
+            </div>
+            <h1>质量有问题</h1>
+            <div class="xuan"></div>
+        </li>
+    </ul>
+    <div class="close guanbi">
+        <div class="close_1">
+            <span>关闭</span>
+        </div>
+    </div>
+</div>
 
 <div class="box1">
     <div class="left"><img src="img/zyxshui.png" /></div>
@@ -52,57 +110,48 @@
         <div class="right "></div>
     </div>
     <div class="jiage">￥<h3><span>60.00</span></h3></div>
-    <div class="box">
+    <div class="box-1">
         <img src="img/zyxxiangji.png" />
     </div>
     <input type="text" placeholder="退款说明">
     <div class="finsh">
         <div class="left"><div class="dian"></div><h3 style="color: #000000">上传<h4 style="color: #3AD198;">凭证</h4></h3><h5 style="font-size: 0.18rem;margin-left: 0.1rem">最多6张</h5></div>
         <div class="right"><h3>
-
         </h3></div>
     </div>
 </div>
 
 <div class="title7 foot">
-
-    <div class="right an"><h3>提交</h3></div>
+    <a href="mwd_Tuikuanxiangqing.html"><div class="right an"><h3>提交</h3></div></a>
 </div>
 <div class="title8"></div>
-<div class="tan">
-    <div class="tou"><h3>店铺优惠</h3>
-        <div class="iconfont icon-Group-"></div>
-    </div>
-    <div class="tou2">
-        <div class="left"><h3>满200元减20元</h3></div>
-        <div class="right iconfont icon-danxuanxuanzhong"></div>
-    </div>
-    <div class="tou3">
-        <div class="left"><h3>满100元减10元</h3></div>
-        <div class="right iconfont icon-danxuanxuanzhong"></div>
-    </div>
-    <div class="tou4">
-        <div class="left"><h3>不使用优惠</h3></div>
-        <div class="right iconfont icon-danxuanxuanzhong"></div>
-    </div>
-    <div class="tou5">
-        <span>关闭</span>
-    </div>
-</div>
-<div class="bg">
-</div>
+
 </body>
 </html>
 <script>
-    let submit=document.querySelector(".an");
-    let tankuang=document.querySelector(".tan");
-    let bg=document.querySelector(".bg");
-    // let close=document.querySelector(".Mwd_tankuang .right img")
-    console.log(submit,tankuang,bg);
-    submit.onclick=function(){
-        tankuang.style.display="block";
-        bg.style.display="block";
+    let maicuo=$(".title2 .right");
 
-    }
+    let box=$(".box");
+    let close=$(".icon");
+    let guan=$(".guanbi");
+
+
+    // console.log(maicuo,box,close);
+    $(".title2 .right").click(function () {
+        $(".box").slideDown("fast");
+    })
+    $(".icon").click(function () {
+        $(".box").slideUp("fast");
+    })
+
+
+    $(".box ul li").click(function () {
+        let i=$(this).index();
+        $(".box li .xuan").eq(i).toggleClass("hot");
+
+    })
+    $(".guanbi").click(function () {
+        $(".box").slideUp("fast");
+    })
 
 </script>

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/rem.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_853771_7b4nva577q3.css">
-   
+
     <script src="js/jquery-3.3.1.js"></script>
     <link rel="stylesheet" href="css/order.css">
 
@@ -31,17 +31,17 @@
         <div class="rowone">
             <!--<div class="dot"></div>-->
             <p class="way">水龙头维修</p>
-            <div class="doorl" ><div class="center"></div></div>
+            <div class="doorl long" ><div class="center"></div></div>
         </div>
         <div class="rowone">
             <!--<div class="dot"></div>-->
             <p class="way">水龙头更换</p>
-            <div class="doorl"><div class="center"></div></div>
+            <div class="doorl long1"><div class="center"></div></div>
         </div>
         <div class="rowone">
             <!--<div class="dot"></div>-->
             <p class="way">其他</p>
-            <div class="doorl"><div class="center"></div></div>
+            <div class="doorl long2"><div class="center"></div></div>
         </div>
     </div>
 
@@ -50,7 +50,7 @@
 
 <div class="container-b" style="margin-top: 0.25rem">
     <div class="shadow">
-        <div class="rowone">
+        <div class="rowone water">
             <!--<div class="dot"></div>-->
             <p class="way">水龙头</p>
             <p class="door" style="margin-left: 1rem">×<span>1</span></p>
@@ -59,20 +59,32 @@
             <span>0</span>
             <div class="iconfont icon-jiahao"></div>
         </div>
-        <div class="rowone">
+        <div class="rowone loop">
             <!--<div class="dot"></div>-->
             <p class="way">水管</p>
-            <p class="door"></p>
+            <p class="door" style="margin-left: 1rem">×<span>1</span></p>
+            <p class="shuzi" style="margin-left: 0.8rem">￥<span>15.00</span></p>
+            <div class="iconfont icon-jianhao" ></div>
+            <span>0</span>
+            <div class="iconfont icon-jiahao"></div>
         </div>
-        <div class="rowone">
+        <div class="rowone floor">
             <!--<div class="dot"></div>-->
             <p class="way">地漏</p>
-            <p class="door"></p>
+            <p class="door" style="margin-left: 1rem">×<span>1</span></p>
+            <p class="shuzi" style="margin-left: 0.8rem">￥<span>10.00</span></p>
+            <div class="iconfont icon-jianhao" ></div>
+            <span>0</span>
+            <div class="iconfont icon-jiahao"></div>
         </div>
-        <div class="rowone">
+        <div class="rowone cha">
             <!--<div class="dot"></div>-->
             <p class="way">补差价</p>
-            <p class="door"></p>
+            <p class="door" style="margin-left: 1rem">×<span>1</span></p>
+            <p class="shuzi" style="margin-left: 0.8rem">￥<span>2.00</span></p>
+            <div class="iconfont icon-jianhao" ></div>
+            <span>0</span>
+            <div class="iconfont icon-jiahao"></div>
         </div>
     </div>
 
@@ -87,7 +99,8 @@
     <div class="box">
         <img src="img/camera.png"/>
     </div>
-    <input type="text" placeholder="添加文字描述...">
+    <!--<input type="text" placeholder="添加文字描述...">-->
+    <textarea name="" id="" cols="30" rows="10" placeholder="添加文字描述..."></textarea>
 </div>
 
 <div class="title2">
@@ -118,21 +131,29 @@
     <div class="dot"></div>
     <div class="left"><h3>合 计:</h3></div>
     <div class="shuzi"><p>￥<span>162</span></p></div>
-    <div class="right"><h3>立即付款</h3></div>
+    <a href="cyj_txdd.html"><div class="right"><h3>立即付款</h3></div></a>
 </div>
 
 </body>
 </html>
 <script>
-    let add=$(" .icon-jiahao")
-    let less=$(".icon-jianhao")
-    let spans=$(".rowone>span");
-    let count=$(".door span");
-
-    console.log(count);
+    let add=$(".water .icon-jiahao")
+    let less=$(".water .icon-jianhao")
+    let spans=$(".water>span");
+    let count=$(".water .door span");
     let nums=parseInt(spans[0].innerHTML);
-    console.log(nums);
-    let aa=$(".shuzi>span");
+    let aa=$(".water .shuzi>span");
+    console.log(aa);
+
+    let add1=$(".loop .icon-jiahao")
+    let less1=$(".loop .icon-jianhao")
+    let spans1=$(".loop>span");
+    let count1=$(".loop .door span");
+    let nums1=parseInt(spans1[0].innerHTML);
+    let aa1=$(".loop .shuzi>span");
+
+
+
     add.click(function () {
         let suan=45*(nums+1)+".00";
         aa.html(suan);
@@ -140,10 +161,12 @@
         nums++;
         spans[0].innerHTML=nums;
         count[0].innerHTML=nums;
-    })
-
+         aaa=aa.html();
+        return aa;
+        console.log(aa.html());
+    });
     less.click(function () {
-        let suan=45*(nums-1);
+        let suan=45*(nums-1)+".00";
         aa.html(suan);
         if (nums<=1){
             return;
@@ -151,7 +174,116 @@
         nums--;
         spans[0].innerHTML=nums;
         count[0].innerHTML=nums;
+
     })
 
 
+
+
+
+
+    add1.click(function () {
+        let suan=15*(nums1+1)+".00";
+        aa1.html(suan);
+        if(nums1>=100)return;
+        nums1++;
+        spans1[0].innerHTML=nums1;
+        count1[0].innerHTML=nums1;
+    })
+
+    less1.click(function () {
+        let suan=15*(nums1-1)+".00";
+        aa1.html(suan);
+        if (nums1<=1){
+            return;
+        }
+        nums1--;
+        spans1[0].innerHTML=nums1;
+        count1[0].innerHTML=nums1;
+    })
+
+
+
+
+    let add2=$(".floor .icon-jiahao")
+    let less2=$(".floor .icon-jianhao")
+    let spans2=$(".floor>span");
+    let count2=$(".floor .door span");
+    let nums2=parseInt(spans2[0].innerHTML);
+    let aa2=$(".floor .shuzi>span");
+
+    add2.click(function () {
+        let suan=10*(nums2+1)+".00";
+        aa2.html(suan);
+        if(nums2>=100)return;
+        nums2++;
+        spans2[0].innerHTML=nums2;
+        count2[0].innerHTML=nums2;
+    })
+
+    less2.click(function () {
+        let suan=10*(nums2-1)+".00";
+        aa2.html(suan);
+        if (nums2<=1){
+            return;
+        }
+        nums2--;
+        spans2[0].innerHTML=nums2;
+        count2[0].innerHTML=nums2;
+    })
+
+
+
+    let add3=$(".cha .icon-jiahao")
+    let less3=$(".cha .icon-jianhao")
+    let spans3=$(".cha>span");
+    let count3=$(".cha .door span");
+    let nums3=parseInt(spans3[0].innerHTML);
+    let aa3=$(".cha .shuzi>span");
+
+    add3.click(function () {
+        let suan=2*(nums3+1)+".00";
+        aa3.html(suan);
+        if(nums3>=100)return;
+        nums3++;
+        spans3[0].innerHTML=nums3;
+        count3[0].innerHTML=nums3;
+    })
+
+    less3.click(function () {
+        let suan=2*(nums3-1)+".00";
+        aa3.html(suan);
+        if (nums3<=1){
+            return;
+        }
+        nums3--;
+        spans3[0].innerHTML=nums3;
+        count3[0].innerHTML=nums3;
+    })
+
+
+    let door=$(".long")
+    let c1=$(".long .center")
+    console.log(c1);
+    door.click(function () {
+      door.toggleClass("hot");
+      c1.toggleClass("active");
+    })
+
+
+
+    let door1=$(".long1")
+    let c11=$(".long1 .center")
+    door1.click(function () {
+        door1.toggleClass("hot");
+        c11.toggleClass("active");
+    })
+
+
+    let door2=$(".long2")
+    let c12=$(".long2 .center")
+    door2.click(function () {
+        door2.toggleClass("hot");
+        c12.toggleClass("active");
+    })
 </script>

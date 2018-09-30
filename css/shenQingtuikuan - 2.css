@@ -1,23 +1,31 @@
+.iconfont{
+    font-size: 0.22rem;
+}
 header{
     width:100%;
     height: 1rem;
     background:#fff;
+    box-shadow: 0 0.05rem 0.1rem rgba(41,167,255,0.13);
     padding:0 0.24rem;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     position: fixed;
     top:0;
     left: 0;
-    padding:0 0.24rem;
-    box-shadow: 0 0.05rem 0.5rem 0.1rem rgba(41,167,255,0.13);
 }
 header p{
-    display: block;
+    /*display: block;*/
     font-size: 0.38rem;
-    line-height: 0.9rem;
     color: #4ebbfe;
-    line-height: 1rem;
+    text-align: center;
+    /*line-height: 1rem;*/
+}
+header a{
+    text-align: center;
+    display: block;
+    color: #36a8fe;
 }
 header i{
     font-size:0.38rem ;
@@ -25,67 +33,167 @@ header i{
     line-height: 1rem;
 }
 /*顶部结束*/
+.box_1{
+    width: 100%;
+    padding:0.01rem;
+    margin-top:0.49rem;
+
+}
+.box_1 .kefu,.xiugai,.chexiao{
+    width: 1.66rem;
+    height: 0.6rem;
+    background: #3bacfe;
+    color: white;
+    text-align: center;
+    line-height: 0.6rem;
+    font-size: 0.2rem;
+    float: right;
+    border-radius: 0.3rem;
+    box-shadow: 0px 4px 10px -2px rgba(59, 172, 254, 0.43);
+}
+.box_1 .chexiao{
+    background: #e7f6ff;
+    color: #3bacfe;
+}
+.box_1 .xiugai{
+    margin:0 0.2rem;
+}
+.xian{
+    width: 7.02rem;
+    height: 0.02rem;
+    background: #F5F5F5;
+    margin-top: 1.3rem;
+}
+.xinxi .dian{
+    width: 0.1rem;
+    height: 0.05rem;
+    background: #36dd7c;
+    border-radius: 0.1rem;
+}
+.xinxi .headers{
+    height: 0.6rem;
+    position: relative;
+}
+.xinxi .headers h1{
+    font-size: 0.26rem;
+    color: #4D4D4D;
+    margin-left: 0.22rem;
+    line-height: 0.6rem;
+}
+.xinxi .headers h1 span{
+    color: #31D094;
+}
+.xinxi .headers .dian{
+    position: absolute;
+    top:0.28rem;
+    bottom:0;
+    left:0;
+    margin: 0 auto;
+}
 .box1{
-    padding-top: 0.38rem;
-    width: 7.5rem;
+    width: 7.2rem;
     height:2.6rem;
-    background-color: #FBFEFF;
+    margin-top: 1.5rem;
     display: flex;
     flex-direction: row;
     position: relative;
-    /*border-bottom:0.01rem solid #F6F9FA;*/
-    margin-top: 1rem;
+    padding-left: 0.22rem;
+    padding-right: 0.22rem;
     /*justify-content: space-around;*/
 }
 .box1 .left{
     width: 1.74rem;
     height: 1.74rem;
-    background-color: #5bc0de;
-    margin-left: 0.24rem;
+    box-shadow: 0px 4px 9px -1px rgba(199, 200, 202, 0.43);
+
 }
 .box1 .left img{
-    width: 1.74rem;
-    height: 1.74rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    display: block;
+    margin-top: 0.2rem;
+
+
 }
 .box1 .right{
-    margin-left: 0.27rem;
+    margin-left: 0.2rem;
     width: 3.2rem;
     height: 1.74rem;
     /*background-color: #5bc0de;*/
-    font-size: 0.2rem;
+    font-size: 0.3rem;
+}
+.box1 .right h3{
+    font-size: 0.3rem;
+    color: #666666;
 }
 .box1 .right h4{
-    /*margin-top: 0.12rem;*/
+
+    color: #B2B2B2;
 }
-.box1 .right .bao{
-    display: flex;
-    flex-direction: row;
-    margin-top: 0.1rem;
+.box1 .right h4 span{
+    font-size: 0.22rem;
+}
+.box1 .right h5{
+    font-size: 0.26rem;
+    color: #36a8fe;
+    margin: 0.05rem 0;
+
 }
 .box1 .right h6{
-    /*margin-top: 0.18rem;*/
-    color: #939596;
+    margin-top: 0.2rem;
+    color: #8a8c8d;
 }
-.box1 .touch{
-    width: 1.82rem;
-    height: 0.5rem;
-    position: absolute;
-    right: 0.23rem;
-    bottom: -0.5rem;
-    font-size: 0.24rem;
-    display: flex;
-    flex-direction: row;
-    color: #FCBC43;
+
+.box1 .right .dian{
+    width: 0.05rem;
+    height: 0.05rem;
+    background: #44b5ff;
+    border-radius: 50%;
+    float: left;
+    margin: 0.2rem 0.1rem 0 0;
 }
-.box1 .hezi{
+.box1 .right h6 .dian{
+    margin: 0.1rem 0.1rem 0 0;
+    background: #36d681;
+}
+
+.box1 h6 .dians{
+    width: 0.08rem;
+    height: 0.08rem;
+    background-color: #36d681;
+    margin-top: 0.15rem;
+
+    border-radius: 50%;
+    float: right;
+    margin-right: -1.54rem;
+}
+.box1 h6 .X{
+    float: right;
+    color: #8a8c8d;
     font-size: 0.24rem;
-    /*width: 0.5rem;*/
-    height: 0.5rem;
-    display: flex;
-    flex-direction: row;
+    margin-right: -1.9rem;
+}
+.box1 .fukuan{
+    width: 1.9rem;
+    height: 0.24rem;
     position: absolute;
-    right: 0.5rem;
-    bottom: 0.1rem;
+    bottom:0.3rem;
+    right:0;
+
+}
+.box1 .fukuan .dian{
+    width: 0.05rem;
+    height: 0.05rem;
+    background: #44b5ff;
+    border-radius: 50%;
+    position: absolute;
+    bottom:0.05rem;
+    right:2rem;
+
+}
+.box1 .fukuan h1{
+    font-size: 0.24rem;
+    color: #fbb548;
 }
 .dian1{
     width: 0.1rem;
@@ -134,6 +242,7 @@ header i{
     color:#979899;
     border-bottom:0.01rem solid #F6F9FA;
 }
+
 .title2 .right{
     display: flex;
     flex-direction: row;
@@ -192,7 +301,7 @@ header i{
     padding-left: 0.22rem;
     padding-right: 0.22rem;
 }
-.title5 .box{
+.title5 .boxs{
     /*width: 1rem;*/
     /*height: 0.9rem;*/
     /*background-color: #FBFEFF;*/
@@ -201,7 +310,7 @@ header i{
     top: 3.2rem;
     /*box-shadow: 0px 4px 11px -1px rgba(55, 223, 116, 0.75);*/
 }
-.title5 .box img{
+.title5 .boxs img{
     width: 1.01rem;
     height: 1.01rem;
 }
@@ -215,6 +324,7 @@ header i{
     outline: none;
     border: 0 solid #ffffff;
     border-radius: 0.1rem;
+    padding:0.1rem;
     /*color: #D4E0E7;*/
 }
 .title5 .jiage{
@@ -261,21 +371,26 @@ header i{
     display: flex;
     flex-direction: row;
 }
-.title7{
-
-    width: 7.5rem;
-    height: 2rem;
-    font-size: 0.2rem;
-    /*background-color: #F1FAFF;*/
-    position: relative;
-    padding-left: 0.22rem;
-    padding-right: 0.22rem;
-    /*display: flex;*/
-    /*flex-direction: row;*/
-    /*justify-content: space-around;*/
-    /*line-height: 1rem;*/
-
+.Lianxi{
+    width: 4.54rem;
+    height: 0.6rem;
+    background: linear-gradient(to right , rgb(55,224,111) ,rgb(49,214,154));
+    position: absolute;
+    bottom: 0.8rem;
+    left: 1.5rem;
+    border-radius: 0.6rem;
+    box-shadow: 0px 4px 11px -1px rgba(55, 223, 116, 0.75);
 }
+.Lianxi span{
+    width: 4.54rem;
+    height: 0.6rem;
+    text-align: center;
+    line-height: 0.6rem;
+    font-size: 0.2rem;
+    float: left;
+    color: white;
+}
+
 body{
     background-color: #FBFEFF;
 }
@@ -306,7 +421,7 @@ body{
     width: 7.5rem;
     height: 0.01rem;
     position: fixed;
-    top:4.1rem;
+    top:4.6rem;
 }
 .foot{
     position: fixed;
@@ -322,9 +437,7 @@ body{
     margin-top: 0.43rem;
 
 }
-.iconfont{
-    font-size: 0.2rem!important;
-}
+
 .bg{
     width: 7.5rem;
     height: 13.34rem;
@@ -334,103 +447,196 @@ body{
     display: none;
     z-index: 1;
 }
-.tan{
-    width: 7.5rem;
-    height: 4.92rem;
-    background-color: #FFFFFF;
-    position: fixed;
-    bottom: 0;
-    z-index: 10;
-    display: none;
-}
-.tan .tou{
-    width: 7.5rem;
-    height: 0.85rem;
-    /*background-color: yellow;*/
-    font-size:0.22rem;
-    line-height: 0.85rem;
-    text-align: center;
-    color: #3BB1FF;
-}
-.tan .tou .icon-Group-{
-    font-size: 0.5rem;
+
+
+/*退款原因弹框*/
+.box{
+    width: 100%;
+    padding: 0.2rem 0.17rem;
     position: absolute;
-    top:0.08rem;
-    right: 0.2rem;
-    color: #D0DCE5;
-}
-.tan .tou2{
-    width: 7.5rem;
-    height: 0.85rem;
-    /*background-color: red;*/
-    font-size:0.22rem;
-    line-height: 0.85rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 0.22rem;
-    padding-right: 0.22rem;
-    border-bottom:0.01rem solid #F6F9FA;
-    border-top:0.01rem solid #F6F9FA;
-    color: #8A8C8D;
+    bottom: 0;
+    box-shadow: 0px -417px 33px 503px rgba(0, 0, 0, 0.43);
+    display: none;
+    z-index: 15;
+    background: white;
 
 }
-.tan .tou2 .icon-danxuanxuanzhong{
-    color: #3BB1FF;
-    font-size: 0.4rem;
+.box .header{
+    width: 100%;
+    height: 0.88rem;
+    position: relative;
 }
-.tan .tou3{
-    width: 7.5rem;
-    height: 0.85rem;
-    /*background-color: red;*/
-    font-size:0.22rem;
-    line-height: 0.85rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 0.22rem;
-    padding-right: 0.22rem;
-    border-bottom:0.01rem solid #F6F9FA;
-    color: #8A8C8D;
+.box .header h1{
+    text-align: center;
+    font-size: 0.2rem;
 }
-.tan .tou3 .icon-danxuanxuanzhong{
-    color: #3BB1FF;
-    font-size: 0.4rem;
+.box .header h1 span{
+    color: #41b2fc;
+}
+.box .header .icon{
+    width: 0.34rem;
+    height: 0.34rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0.17rem;
+    margin: 0 auto;
+    color: #d1dde6;
+
+}
+
+.box ul li{
+    width: 100%;
+    height: 0.88rem;
+    border-bottom: 0.04rem solid #FAFAFA;
+    padding: 0.3rem 0;
+}
+.box ul li .dian{
+    width: 0.05rem;
+    height: 0.05rem;
+    background: #44b5ff;
+    border-radius: 50%;
+    box-shadow: 0px 4px 24px -1px rgba(59, 172, 254, 0.43);
+    float: left;
+    margin-top: 0.2rem;
+}
+.box ul li h1{
+    font-size: 0.24rem;
+    color: #8a8c8d;
+    display: block;
+    float: left;
+    margin-left: 0.1rem;
+}
+.box ul li .xuan{
+    width: 0.23rem;
+    height: 0.23rem;
+    border:0.08rem solid #3BB1FF;
+    float: right;
+    border-radius: 0.2rem;
+    margin-right: 0.15rem;
     display: none;
 }
-.tan .tou4{
-    width: 7.5rem;
-    height: 0.85rem;
-    /*background-color: red;*/
-    font-size:0.22rem;
-    line-height: 0.85rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 0.22rem;
-    padding-right: 0.22rem;
-    border-bottom:0.01rem solid #F6F9FA;
-    color: #8A8C8D;
+.box ul li .hot{
+    display: block;
 }
-.tan .tou4 .icon-danxuanxuanzhong{
-    color: #3BB1FF;
-    font-size: 0.4rem;
-    display: none;
+.box .close{
+    width: 100%;
+    height: 1.76rem;
+    position: relative;
 }
-.tan .tou5 {
+.box .close .close_1{
     width: 4.54rem;
     height: 0.6rem;
-    border-radius: 0.3rem;
-    box-shadow: 0px 4px 11px -1px rgba(55, 223, 116, 0.75);
     position: absolute;
-    bottom: 0.56rem;
-    right: 1.46rem;
-    background-color: rgba(49, 214, 154, 0.9);
-    font-size: 0.3rem;
-    color: #FFFFFF;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.box .close .close_1 span{
+    width: 4.54rem;
+    height: 0.6rem;
+    font-size: 0.2rem;
     text-align: center;
     line-height: 0.6rem;
+    color: white;
+    box-shadow: 0px 4px 24px -1px rgba(72, 213, 112, 0.52);
+    border-radius: 0.5rem;
+    background: linear-gradient(to right , rgb(47,212,187) ,rgb(45,222,87));
+    float: left;
 }
+.boxD{
+    width: 100%;
+    padding: 0.2rem 0.17rem;
+    position: absolute;
+    bottom: 0;
+    display: none;
+    background: white;
+    z-index: 55;
+    box-shadow: 0px -417px 33px 503px rgba(0, 0, 0, 0.43);
+}
+.boxD .header{
+    width: 100%;
+    height: 0.88rem;
+    position: relative;
+}
+.boxD .header h1{
+    text-align: center;
+    font-size: 0.2rem;
+}
+.boxD .header h1 span{
+    color: #41b2fc;
+}
+.boxD .header .icons{
+    width: 0.24rem;
+    height: 0.24rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0.17rem;
+    margin: 0 auto;
+    color: #d1dde6;
+}
+.boxD ul li{
+    width: 100%;
+    height: 0.88rem;
+    border-bottom: 0.04rem solid #FAFAFA;
+    padding: 0.3rem 0;
+}
+.boxD ul li .dian{
+    width: 0.05rem;
+    height: 0.05rem;
+    background: #44b5ff;
+    border-radius: 50%;
+    box-shadow: 0px 4px 24px -1px rgba(59, 172, 254, 0.43);
+    float: left;
+    margin-top: 0.2rem;
+}
+.boxD ul li h1{
+    font-size: 0.24rem;
+    color: #8a8c8d;
+    display: block;
+    float: left;
+    margin-left: 0.1rem;
+}
+.boxD ul li .xuan{
+    width: 0.23rem;
+    height: 0.23rem;
+    border:0.08rem solid #3BB1FF;
+    float: right;
+    border-radius: 0.2rem;
+    margin-right: 0.15rem;
+    display: none;
 
-
-
+}
+.boxD ul li .hot{
+    display: block;
+}
+.boxD .close{
+    width: 100%;
+    height: 1.76rem;
+    position: relative;
+}
+.boxD .close .close_1{
+    width: 4.54rem;
+    height: 0.6rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.boxD .close .close_1 span{
+    width: 4.54rem;
+    height: 0.6rem;
+    font-size: 0.2rem;
+    text-align: center;
+    line-height: 0.6rem;
+    color: white;
+    box-shadow: 0px 4px 24px -1px rgba(72, 213, 112, 0.52);
+    border-radius: 0.5rem;
+    background: linear-gradient(to right , rgb(47,212,187) ,rgb(45,222,87));
+    float: left;
+}

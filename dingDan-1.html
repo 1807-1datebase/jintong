@@ -11,12 +11,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <link rel="stylesheet" href="css/dingDan-1.css">
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_853771_fb2ylb6vxch.css">
+    <script src="js/jquery-3.3.1.js"></script>
 
 </head>
 <body>
 <!--顶部开始-->
 <header>
-    <i class="iconfont icon-fanhui"></i>
+    <a href="dp_spxq_slt.html" class="iconfont icon-fanhui"></a>
     <p>填写订单</p>
     <i class="iconfont "></i>
 </header>
@@ -25,24 +26,59 @@
         <div class="left"><h3>选择收货地址</h3></div>
         <div class="right iconfont icon-xiayibu"></div>
     </div>
+<div class="box">
+    <div class="header">
+        <h1><span>退款原因</span></h1>
+        <div class="icon iconfont icon-Group-" style="font-size: 0.4rem;" ></div>
+    </div>
+    <ul>
+        <li>
+            <div class="dian">
+
+            </div>
+            <h1>满100元减20元</h1>
+            <div class="xuan "></div>
+        </li>
+        <li>
+            <div class="dian">
+
+            </div>
+            <h1>满100元减20元</h1>
+            <div class="xuan"></div>
+        </li>
+        <li>
+            <div class="dian">
+
+            </div>
+            <h1>不使用优惠</h1>
+            <div class="xuan"></div>
+        </li>
+
+    </ul>
+    <div class="close">
+        <div class="close_1">
+            <span>关闭</span>
+        </div>
+    </div>
+</div>
     <div class="box1">
         <div class="left"><img src="img/zyxshui.png" /></div>
         <div class="right">
-            <h3 style="color: #646666;">潜水艇高端水龙头</h3>
-            <h5 style="color: #36A8FE">ECC01</h5>
-            <h4 style="color: #C4C6C7;">商品规格高端水龙头</h4>
+            <h3>潜水艇高端水龙头</h3>
+            <h5><div class="dian"></div><span>ECC01-001Lw</span></h5>
+            <h4><div class="dian"></div><span>商品规格潜水艇高端水龙头</span></h4>
+            <h6><div class="dian"></div><span>￥60.00</span></h6>
 
-            <h6>￥60.00</h6>
         </div>
         <div class="touch">
-            <div class="le"><span style="color: #ffffff">-</span></div>
-            <div class="shu"><h3 style="color: #36A8FE;">01</h3></div>
+            <div class="le "><span style="color: #ffffff">-</span></div>
+            <div class="shu"><h3 style="color: #36A8FE;"><span class="liang">0</span><span class="p">1</span></h3></div>
             <div class="ri"><span style="color: #ffffff;">+</span></div>
         </div>
     </div>
     <div class="title2">
         <div class="left"><div class="dian"></div><h3>优惠券</h3></div>
-        <div class="right"><h3 style="width:1.7rem; ">无可用优惠券 </h3>
+        <div class="right an"><h3 style="width:1.7rem; ">无可用优惠券 </h3>
             <div class="iconfont icon-xiayibu"></div>
         </div>
 
@@ -62,14 +98,14 @@
             <div class="left"><div class="dian"></div><h3>备注</h3></div>
             <div class="right iconfont icon-xiayibu"></div>
         </div>
-        <div class="box">
+        <div class="box-1">
             <img src="img/zyxxiangji.png" />
         </div>
         <input type="text" placeholder="添加文字描述">
         <div class="finsh">
             <div class="left"><div class="dian"></div><h3>商品金额</h3></div>
             <div class="right"><h3>
-                ￥60.00
+                ￥<span class="money-2">00</span>
             </h3></div>
         </div>
     </div>
@@ -79,12 +115,12 @@
     </div>
     <div class="title7 foot">
         <div class="left"><h3>合计:</h3></div>
-        <div class="shuzi"><p>￥<span>66</span></p></div>
-        <div class="right an"><h3>提交订单</h3></div>
+        <div class="shuzi"><p>￥<span class="money-2">60</span></p></div>
+        <a href="booking.html"><div class="right "><h3>提交订单</h3></div></a>
     </div>
 <div class="tan">
     <div class="tou"><h3>店铺优惠</h3>
-        <div class="iconfont icon-Group-"></div>
+        <div class="iconfont dianji icon-Group-"></div>
     </div>
     <div class="tou2">
         <div class="left"><h3>满200元减20元</h3></div>
@@ -98,7 +134,7 @@
         <div class="left"><h3>不使用优惠</h3></div>
         <div class="right iconfont icon-danxuanxuanzhong"></div>
     </div>
-    <div class="tou5">
+    <div class="tou5 close">
         <span>关闭</span>
     </div>
 </div>
@@ -107,15 +143,124 @@
 </body>
 </html>
 <script>
-    let submit=document.querySelector(".an");
-    let tankuang=document.querySelector(".tan");
-    let bg=document.querySelector(".bg");
-    // let close=document.querySelector(".Mwd_tankuang .right img")
-    console.log(submit,tankuang,bg);
-    submit.onclick=function(){
-        tankuang.style.display="block";
-        bg.style.display="block";
+    let maicuo=$(".title2 .right");
+    let box=$(".box");
+    let close=$(".icon");
+    let guanbi=$(".close");
 
-    }
+    $(".title2 .right").click(function () {
+        $(".box").slideDown("fast");
+    })
+    $(".icon").click(function () {
+        $(".box").slideUp("fast");
+    })
+    $(".close").click(function () {
+        $(".box").slideUp("fast");
+    })
+
+    $(".box ul li").click(function () {
+        let i=$(this).index();
+        $(".box li .xuan").eq(i).toggleClass("hot");
+
+    })
+    // let jian=$(".le");
+    // let jia=$(".ri");
+    // let shu=$(".shu");
+    // // let shu = 0;
+    // console.log(jian,jia,shu);
+    // $(".ri").click(function () {
+    //    shu++;
+    //    shu==0;
+    //     $(".shu").html(shu);
+    //
+    // })
+    // $(".le").click(function () {
+    //    shu--;
+    //     $(".shu").html(shu);
+    // })
+
+
+
+
+
+
+    let money = $(".money-2");
+    let jia = $(".ri");
+    let jian = $(".le");
+    let liang = $(".p");
+    let po = $(".liang");
+    // console.log(po);
+    // console.log($(".liang").html()+1);
+    let num = 1;
+    let use = 0;
+    let as=60;
+    $(".ri").click(function () {
+        if (num >= 9) {
+            num = 0;
+            use += 1;
+        } else {
+            num++;
+            as=as+60;
+        }
+        $(".p").html(num);
+        $(".liang").html(use);
+        $(".money-2").html(as);
+    })
+
+
+
+    jian.click(function () {
+
+        if (num <= 0) {
+            num = 9;
+            use -= 1;
+        } else {
+            num--;
+            as=as-60;
+
+        }
+        if (use<0) {
+            use=0;
+            num=0;
+        }
+
+        $(".liang").html(use);
+        $(".p").html(num);
+        $(".money-2").html(as);
+    })
+
+
+
+
 
 </script>
+
+
+
+
+
+<!--<script>-->
+    <!--let submit=document.querySelector(".an");-->
+    <!--let tankuang=document.querySelector(".tan");-->
+    <!--let bg=document.querySelector(".bg");-->
+    <!--let dianji=document.querySelector(".dianji");-->
+    <!--let close=document.querySelector(".close");-->
+
+    <!--// let close=document.querySelector(".Mwd_tankuang .right img")-->
+    <!--console.log(submit,tankuang,bg);-->
+    <!--submit.onclick=function(){-->
+        <!--tankuang.style.display="block";-->
+        <!--bg.style.display="block";-->
+
+    <!--}-->
+    <!--dianji.onclick=function () {-->
+        <!--tankuang.style.display="none";-->
+        <!--bg.style.display="none";-->
+    <!--}-->
+    <!--close.onclick=function () {-->
+        <!--tankuang.style.display="none";-->
+        <!--bg.style.display="none";-->
+    <!--}-->
+
+
+<!--</script>-->

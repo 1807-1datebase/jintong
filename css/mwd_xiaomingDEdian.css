@@ -30,9 +30,7 @@ header a{
 	padding: 0.12rem;
 	margin-top: 1rem;
 }
-.tallk-one{
-	margin-top: 0.45rem;
-}
+
 .tallk{
 	width: 100%;
 	height: 1.6rem;
@@ -151,6 +149,24 @@ header a{
 	width: 0.32rem;
 	height: 0.28rem;
 
+}
+.tallk-three .hua_kuang ul{
+	width: 78%;
+	height: 100%;
+	/*background: red;*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.tallk-three .hua_kuang li{
+	width: 0.04rem;
+	/*height: 0.4rem;*/
+	margin:0.05rem;
+	background: white;
+	display: none;
+}
+.tallk-three .hua_kuang .hot{
+	display: block;
 }
 .tallk-three .miao{
 	display: block;

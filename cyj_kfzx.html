@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>小明的店</title>
+</head>
+<link rel="stylesheet" href="css/rem.css">
+<link rel="stylesheet" href="css/swiper-4.3.5.min.css">
+<link rel="stylesheet" href="css/cyj_kfzx.css">
+<link rel="stylesheet" href="https://at.alicdn.com/t/font_853771_7b4nva577q3.css">
+<link rel="stylesheet" href="css/base.css">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<script src="js/jquery-3.3.1.js"></script>
+<body>
+<header>
+	<a href="P_grzx.html"><i class="iconfont icon-fanhui"></i></a>
+	<p>客服中心</p>
+	<i class="iconfont "></i>
+</header>
+	<div class="box">
+		<div class="tallk tallk-one">
+			<div class="tou_xiang">
+				<img src="img/m4.png" alt="">
+				<h1>蓝胖子</h1>
+			</div>
+			<div class="hua_kuang">
+				<span>买彩票点亮尊贵勋章——腾讯旗下购彩平</span>
+			</div>
+		</div>
+		<div class="tallk-two">
+			<div class="hua_kuang">
+				<span>有什么需要帮助的</span>
+			</div>
+			<div class="tou_xiang">
+				<img src="img/m3.png" alt="">
+				<h1>商家客服</h1>
+			</div>
+		</div>
+		<div class="tallk tallk-three">
+			<div class="tou_xiang">
+				<img src="img/m4.png" alt="">
+				<h1>蓝胖子</h1>
+			</div>
+			<div class="hua_kuang">
+				<span class="laba"><img src="img/m6.png" alt=""></span>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="miao">
+				01``43
+			</div>
+		</div>
+		
+	</div>
+	<div class="footer">
+			<img src="img/m5.png" alt="">
+			<input type="text">
+		</div>
+</body>
+</html>
+<script>
+    let t=setInterval(move,1000);
+    function move() {
+
+            let divs=$(".tallk-three .hua_kuang li");
+	   for (i=0;i<20;i++) {
+        let w=Math.round(Math.random()*20+1);
+        divs.eq(i).css("height",w);
+	     }
+    }
+        clearInterval(t);
+    laba=$(".laba");
+    console.log($(".laba"));
+    $(".laba").click(function () {
+        t=setInterval(move,100);
+    })
+</script>

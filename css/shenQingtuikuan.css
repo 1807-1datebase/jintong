@@ -2,27 +2,126 @@ header{
     width:100%;
     height: 1rem;
     background:#fff;
+    box-shadow: 0 0.05rem 0.1rem rgba(41,167,255,0.13);
     padding:0 0.24rem;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     position: fixed;
     top:0;
     left: 0;
-    padding:0 0.24rem;
-    box-shadow: 0 0.05rem 0.5rem 0.1rem rgba(41,167,255,0.13);
 }
 header p{
-    display: block;
+    /*display: block;*/
     font-size: 0.38rem;
-    line-height: 0.9rem;
     color: #4ebbfe;
-    line-height: 1rem;
+    text-align: center;
+    /*line-height: 1rem;*/
 }
-header i{
-    font-size:0.38rem ;
+header a{
+    text-align: center;
+    display: block;
     color: #36a8fe;
-    line-height: 1rem;
+}
+
+
+/*弹框*/
+.box{
+    width: 100%;
+    padding: 0.2rem 0.17rem;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0px -417px 33px 503px rgba(0, 0, 0, 0.43);
+    display: none;
+    z-index: 15;
+    background: white;
+
+}
+.box .header{
+    width: 100%;
+    height: 0.88rem;
+    position: relative;
+}
+.box .header h1{
+    text-align: center;
+    font-size: 0.2rem;
+}
+.box .header h1 span{
+    color: #41b2fc;
+}
+.box .header .icon{
+    width: 0.34rem;
+    height: 0.34rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0.17rem;
+    margin: 0 auto;
+    color: #d1dde6;
+
+}
+
+.box ul li{
+    width: 100%;
+    height: 0.88rem;
+    border-bottom: 0.04rem solid #FAFAFA;
+    padding: 0.3rem 0;
+}
+.box ul li .dian{
+    width: 0.05rem;
+    height: 0.05rem;
+    background: #44b5ff;
+    border-radius: 50%;
+    box-shadow: 0px 4px 24px -1px rgba(59, 172, 254, 0.43);
+    float: left;
+    margin-top: 0.2rem;
+}
+.box ul li h1{
+    font-size: 0.24rem;
+    color: #8a8c8d;
+    display: block;
+    float: left;
+    margin-left: 0.1rem;
+}
+.box ul li .xuan{
+    width: 0.23rem;
+    height: 0.23rem;
+    border:0.08rem solid #3BB1FF;
+    float: right;
+    border-radius: 0.2rem;
+    margin-right: 0.15rem;
+    display: none;
+}
+.box ul li .hot{
+    display: block;
+}
+.box .close{
+    width: 100%;
+    height: 1.76rem;
+    position: relative;
+}
+.box .close .close_1{
+    width: 4.54rem;
+    height: 0.6rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.box .close .close_1 span{
+    width: 4.54rem;
+    height: 0.6rem;
+    font-size: 0.2rem;
+    text-align: center;
+    line-height: 0.6rem;
+    color: white;
+    box-shadow: 0px 4px 24px -1px rgba(72, 213, 112, 0.52);
+    border-radius: 0.5rem;
+    background: linear-gradient(to right , rgb(47,212,187) ,rgb(45,222,87));
+    float: left;
 }
 /*顶部结束*/
 .box1{
@@ -85,7 +184,7 @@ header i{
     flex-direction: row;
     position: absolute;
     right: 0.5rem;
-    bottom: 0.1rem;
+    bottom: 0.42rem;
 }
 .dian1{
     width: 0.1rem;
@@ -169,7 +268,7 @@ header i{
     padding-left: 0.22rem;
     padding-right: 0.22rem;
 }
-.title5 .box{
+.title5 .box-1{
     /*width: 1rem;*/
     /*height: 0.9rem;*/
     /*background-color: #FBFEFF;*/
@@ -178,7 +277,7 @@ header i{
     top: 3.2rem;
     /*box-shadow: 0px 4px 11px -1px rgba(55, 223, 116, 0.75);*/
 }
-.title5 .box img{
+.title5 .box-1 img{
     width: 1.01rem;
     height: 1.01rem;
 }
@@ -258,7 +357,7 @@ body{
 }
 
 .title7 .right{
-    background-color: #5bc0de;
+    /*background-color: #5bc0de;*/
     width: 4.54rem;
     height: 0.6rem;
     position: absolute;
@@ -270,8 +369,11 @@ body{
     text-align: center;
     line-height: 0.65rem;
     font-size: 0.25rem;
-    border-radius: 0.3rem;
-    box-shadow: 0rem 4rem 11rem -1rem rgba(59, 172, 254, 0.43);
+
+    color: white;
+    box-shadow: 0px 4px 24px -1px rgba(72, 213, 112, 0.52);
+    border-radius: 0.5rem;
+    background: linear-gradient(to right , rgb(47,212,187) ,rgb(45,222,87));
 
 
 }
