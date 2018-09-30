@@ -6,7 +6,7 @@
 </head>
 <link rel="stylesheet" href="css/rem.css">
 <link rel="stylesheet" href="css/swiper-4.3.5.min.css">
-<link rel="stylesheet" href="css/cyj_kfzx.css">
+<link rel="stylesheet" href="css/mwd_xiaomingDEdian.css">
 <link rel="stylesheet" href="https://at.alicdn.com/t/font_853771_7b4nva577q3.css">
 <link rel="stylesheet" href="css/base.css">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
@@ -14,7 +14,7 @@
 <body>
 <header>
 	<a href="P_grzx.html"><i class="iconfont icon-fanhui"></i></a>
-	<p>客服中心</p>
+	<p>商品详情</p>
 	<i class="iconfont "></i>
 </header>
 	<div class="box">
@@ -67,7 +67,7 @@
 				</ul>
 			</div>
 			<div class="miao">
-				01``43
+				0<span class="aa">1</span>``<span class="bb">43</span>
 			</div>
 		</div>
 		
@@ -79,19 +79,73 @@
 </body>
 </html>
 <script>
-    let t=setInterval(move,1000);
+	let num=43;
+	let use=1;
+    let t=setInterval(move,100);
     function move() {
 
-            let divs=$(".tallk-three .hua_kuang li");
+       let divs=$(".tallk-three .hua_kuang li");
 	   for (i=0;i<20;i++) {
         let w=Math.round(Math.random()*20+1);
         divs.eq(i).css("height",w);
 	     }
     }
-        clearInterval(t);
-    laba=$(".laba");
-    console.log($(".laba"));
-    $(".laba").click(function () {
-        t=setInterval(move,100);
+
+    laba=$(".talk-three .hua_kuang");
+    console.log($(".tallk-three .hua_kuang"));
+    // $(".hua_kuang").click(function () {
+    //     t=setInterval(move,100);
+    // })
+    $(".tallk-three .hua_kuang").click(function () {
+        $(".tallk-three .hua_kuang li").toggleClass("hot");
+        let a=setInterval(moves,1000);
+        function moves(){
+            num--;
+            if (num<=0){
+                use--;
+			} 
+			if (num<=0) {
+                num=60;
+			}
+			if (use<=0){
+                use=0;
+			}
+            $(".tallk-three .miao .aa").html(use);
+            $(".tallk-three .miao .bb").html(num);
+		}
+
     })
+
+
+
+	let aa=$(".tallk-three .miao .aa");
+    let bb=$(".tallk-three .miao .bb");
+    jian.click(function () {
+
+        if (num <= 0) {
+            num = 9;
+            use -= 1;
+        } else {
+            num--;
+            as=as-162;
+
+        }
+        if (use<0) {
+            use=0;
+            num=0;
+        }
+
+        $(".liang").html(num);
+        $(".jiajian p").html(use);
+        $(".money-2").html(as);
+    })
+
+
+
+
+
+
+
+
+
 </script>
