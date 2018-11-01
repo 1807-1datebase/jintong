@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/rem.css">
     <link rel="stylesheet" href="css/swiper-4.3.5.min.css">
     <script src="js/swiper-4.3.5.min.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>
 </head>
 <body>
 <!--顶部开始-->
@@ -26,23 +27,23 @@
     <ul>
         <li class="name">
             <img src="img/index/user.png" alt="" style="width: 0.5rem;height: 0.5rem;margin-right: 0.2rem">
-            <input type="text" class="phone" placeholder="请填写您的姓名">
+            <input id="name" type="text" class="phone" placeholder="请填写您的姓名">
         </li>
         <li class="address">
             <img src="img/index/address.png" alt="" style="width: 0.5rem;height: 0.5rem;margin-right: 0.2rem">
-            <input type="text" class="phone" placeholder="请填写您的详细地址">
+            <input id="address" type="text" class="phone" placeholder="请填写您的详细地址">
         </li>
         <li class="phone">
             <img src="img/index/phone.png" alt="">
             <p>+86</p>
-            <input type="text" class="phone" placeholder="请填写手机号码">
+            <input id="phone" type="text" class="phone" placeholder="请填写手机号码">
         </li>
         <li class="area">
             <img src="img/index/again.png" alt="" style="width: 0.5rem;height: 0.5rem;margin-right: 0.2rem">
-            <input type="text" class="phone" placeholder="重复输入您所在的片区">
+            <input id="area" type="text" class="phone" placeholder="重复输入您所在的片区">
         </li>
     </ul>
-    <a href="zcy-login.html"><div class="login">提交</div></a>
+    <div class="login">提交</div>
     <div class="bottom">
         <img src="img/index/dot5.png" alt="">
         <p style="color: #afb1b2;font-size: 0.22rem;font-weight: 400">注册即视为同意接受晋彤电商发送的商业性信息</p>
@@ -50,3 +51,39 @@
 </main>
 </body>
 </html>
+<script>
+$(function () {
+    $("#name").blur(function () {
+        let val=$("#name").val();
+        if(val){
+            $("#address").blur(function () {
+                let val1 = $("#address").val();
+                if(val1){
+                    $("#phone").blur(function () {
+                        let val2 = $("#phone").val();
+                        if(val2){
+                            $("#area").blur(function () {
+                                let val3 = $("#area").val();
+                                if(val3){
+                                    let button=$(".login");
+                                    button.click(function () {
+                                        location.href = "zcy-login.html";
+                                    })
+                                }else{
+                                    alert("请重复输入您所在的片区");
+                                }
+                            })
+                        }else{
+                            alert("请输入手机号");
+                        }
+                    })
+                }else{
+                    alert("请输入详细地址");
+                }
+            })
+        }else{
+            alert("请输入姓名");
+        }
+    })
+})
+</script>
