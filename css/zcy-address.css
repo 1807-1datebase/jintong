@@ -54,7 +54,8 @@ header a{
     font-size: 0.28rem;
     color: #36a8fe;
 }
-.search input{
+
+.search  input{
     width: 5.9rem;
     height: 0.6rem;
     background: #f2faff;

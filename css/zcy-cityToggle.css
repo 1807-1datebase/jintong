@@ -100,6 +100,9 @@ header a{
     text-align: center;
     line-height: 0.45rem;
 }
+.nowcity .city a{
+    color: #36a8fe;
+}
 
 .sort{
     padding:0.3rem 0.24rem;

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/rem.css">
     <link rel="stylesheet" href="css/swiper-4.3.5.min.css">
     <script src="js/swiper-4.3.5.min.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>
 </head>
 <body>
 <div class="frame">
@@ -22,14 +23,20 @@
     <!--顶部结束-->
 
 
-
+    <script>
+        $(function () {
+            $("input").click(function () {
+                location.href="zcy-cityToggle.html";
+            })
+        })
+    </script>
     <!--搜索框开始-->
 <div class="search">
     <a href="zcy-cityToggle.html"><div class="city">
     <span>太原</span>
     <i class="iconfont icon-xiala"></i>
   </div></a>
-  <input type="text" placeholder="搜索你需要定位的城市">
+    <input type="text" placeholder="搜索你需要定位的城市">
 </div>
     <div class="true"></div>
     <!--搜索框结束-->

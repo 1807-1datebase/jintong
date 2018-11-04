@@ -24,7 +24,7 @@ $(function () {
                if (val1) {
                    let button=$(".button");
                    button.click(function () {
-                       location.href="index.html";
+                       location.href="zcy-wechat.html";
                    })
                } else {
                    alert("请输入短信验证码");
